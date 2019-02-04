@@ -27,9 +27,9 @@ $(document).ready(function () {
     event.preventDefault();
     var stat = $("input:radio[name=scene-select-1]:checked").val();
     playerCharStats.pushStat(stat)
-    $(".test").text(playerCharStats.agility);
     console.log(playerCharStats);
 
+    // $(".test").text(playerCharStats.agility);
 
 
 
