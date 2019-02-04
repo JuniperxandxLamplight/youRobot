@@ -24,3 +24,7 @@
 #results{
   display: none;
 }
+
+.outcome {
+  display: none;
+}

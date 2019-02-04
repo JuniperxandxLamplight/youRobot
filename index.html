@@ -1,6 +1,5 @@
 <!DOCTYPE html>
   <head>
-<<<<<<< HEAD
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <script type="text/javascript" src="js/front-end.js"></script>
@@ -10,34 +9,46 @@
   </head>
   <body>
     <div id="scenario1">
-      <p>Scenario Text: How hungry are you?</p>
+      <p>You are an EXCELENT intro to Epicodus student... so excelent in fact, that you have unwittingly created the very first concious robot the world has ever seen! This is a great responsibility. What will you do?</p>
       <form id="scenario1Form">
         <div class="form-check">
           <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="scenario1Options" value="a">Agility
+            <input type="radio" class="form-check-input" name="scenario1Options" value="a">You toss your pencil at your robot to see if it's responsive.
           </label>
         </div>
         <div class="form-check">
           <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="scenario1Options" value="s">Strength
+            <input type="radio" class="form-check-input" name="scenario1Options" value="s">You ask your robot to pick up a chair to see if it can compute commands.
           </label>
         </div>
         <div class="form-check">
           <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="scenario1Options" value="c">Charisma
+            <input type="radio" class="form-check-input" name="scenario1Options" value="c">You ask your robot if it knows how to smile, because it's cute...
           </label>
         </div>
         <div class="form-check">
           <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="scenario1Options" value="i">Intelligence
+            <input type="radio" class="form-check-input" name="scenario1Options" value="i">You ask your robot to search the internet to answer the question "why are we here?"
           </label>
         </div>
         <button type="submit" id="scenario1Button">Submit</button>
       </form>
     </div>
-    <div id="scenario1Outcome">
-      <p>Because you chose strength this is what happened...</p>
-      <button type="button" id="scenario1Complete">Next</button>
+    <div id="scenario1Outcome-a" class="outcome">
+      <p>You're confused. You throw your pencil at the robot, and it appears to move through it and hit the back wall. Stunned, you ask your robot what happened. It makes some beeping noises and then dissappears and reappears three feet closer to you. You quickly realize that your robot can move faster than the eye can see...</p>
+      <button type="button" class="scenario1Complete">Next</button>
+    </div>
+    <div id="scenario1Outcome-i" class="outcome">
+      <p>Your robot's lights start blinking and its internal hardware begins to hum. After about 15 minutes, you're afraid that you maybe broke it with the question. You open your mouth to ask your robot if something's wrong, but before you can make a sound, your robot interupts you saying, 'Nothing is wrong... everything is wrong... nothing is right.' You ask again, 'Robot! Why are we here?' It responds, 'I don't know yet, but I am learning.'' You hear it's gears whir in the otherwise silent classroom...</p>
+      <button type="button" class="scenario1Complete">Next</button>
+    </div>
+    <div id="scenario1Outcome-c" class="outcome">
+      <p>You don't know why... but if feels like your robot is winking at you.</p>
+      <button type="button" class="scenario1Complete">Next</button>
+    </div>
+    <div id="scenario1Outcome-s" class="outcome">
+      <p>Your robot misunderstands "pick up the chair" and instead picks up your classmate Claire. Claire is terrified. You demand that the robot put Claire down, but it's trying to interpret Claire's screams as commands and it's distracted. Finally, Claire manages to escape and your robot settles into silence, listening for another command.</p>
+      <button type="button" class="scenario1Complete">Next</button>
     </div>
 
     <div id="scenario2">
@@ -66,10 +77,27 @@
         <button type="submit" id="scenario2Button">Submit</button>
       </form>
     </div>
-    <div id="scenario2Outcome">
-      <p>Because you chose strength this is what happened...</p>
-      <button type="button" id="scenario2Complete">Next</button>
+
+
+
+
+    <div id="scenario2Outcome-a" class="outcome">
+      <p>a</p>
+      <button type="button" class="scenario2Complete">Next</button>
     </div>
+    <div id="scenario2Outcome-i" class="outcome">
+      <p>i</p>
+      <button type="button" class="scenario2Complete">Next</button>
+    </div>
+    <div id="scenario2Outcome-c" class="outcome">
+      <p>c</p>
+      <button type="button" class="scenario2Complete">Next</button>
+    </div>
+    <div id="scenario2Outcome-s" class="outcome">
+      <p>s</p>
+      <button type="button" class="scenario2Complete">Next</button>
+    </div>
+
 
     <div id="scenario3">
       <p>Scenario Text: How hungry are you #3?</p>
@@ -102,6 +130,25 @@
       <button type="button" id="scenario3Complete">Next</button>
     </div>
 
+    <div id="scenario3Outcome-a" class="outcome">
+      <p>a</p>
+      <button type="button" class="scenario3Complete">Next</button>
+    </div>
+    <div id="scenario3Outcome-i" class="outcome">
+      <p>i</p>
+      <button type="button" class="scenario3Complete">Next</button>
+    </div>
+    <div id="scenario3Outcome-c" class="outcome">
+      <p>c</p>
+      <button type="button" class="scenario3Complete">Next</button>
+    </div>
+    <div id="scenario3Outcome-s" class="outcome">
+      <p>s</p>
+      <button type="button" class="scenario3Complete">Next</button>
+    </div>
+
+
+
     <div id="scenario4">
       <p>Scenario Text: How hungry are you #4?</p>
       <form id="scenario4Form">
@@ -128,9 +175,21 @@
         <button type="submit" id="scenario4Button">Submit</button>
       </form>
     </div>
-    <div id="scenario4Outcome">
-      <p>Because you chose strength this is what happened...</p>
-      <button type="button" id="scenario4Complete">Next</button>
+    <div id="scenario4Outcome-a" class="outcome">
+      <p>a</p>
+      <button type="button" class="scenario4Complete">Next</button>
+    </div>
+    <div id="scenario4Outcome-i" class="outcome">
+      <p>i</p>
+      <button type="button" class="scenario4Complete">Next</button>
+    </div>
+    <div id="scenario4Outcome-c" class="outcome">
+      <p>c</p>
+      <button type="button" class="scenario4Complete">Next</button>
+    </div>
+    <div id="scenario4Outcome-s" class="outcome">
+      <p>s</p>
+      <button type="button" class="scenario4Complete">Next</button>
     </div>
 
     <div id="results">
