@@ -5,7 +5,7 @@ $(function(){
     $("#scenario1").hide();
     var stat = $("input:radio[name=scenario1Options]:checked").val();
     $("#scenario1Outcome-"+stat).show();
-    playerCharStats.pushStat(stat)
+    playerCharStats.pushStatFirst(stat)
     console.log(playerCharStats);
 
 
@@ -53,7 +53,8 @@ $(function(){
 
   });
   $(".scenario4Complete").click(function(){
-    $(".outcome").hide();
-    $("#results").show();
+    var stat = playerCharStats.decideEnd()
+    console.log(stat);
+    $(stat).show();
   });
 });
