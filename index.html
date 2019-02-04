@@ -1,10 +1,150 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/front-end.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Robot Choose Your Own Adventure</title>
   </head>
   <body>
+    <div id="scenario1">
+      <p>Scenario Text: How hungry are you?</p>
+      <form id="scenario1Form">
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="scenario1Options" value="a">Agility
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="scenario1Options" value="s">Strength
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="scenario1Options" value="c">Charisma
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="scenario1Options" value="i">Intelligence
+          </label>
+        </div>
+        <button type="submit" id="scenario1Button">Submit</button>
+      </form>
+    </div>
+    <div id="scenario1Outcome">
+      <p>Because you chose strength this is what happened...</p>
+      <button type="button" id="scenario1Complete">Next</button>
+    </div>
 
+    <div id="scenario2">
+      <p>Scenario Text: How hungry are you?</p>
+      <form id="scenario2Form">
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="scenario2Options" value="a">Agility
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="scenario2Options" value="s">Strength
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="scenario2Options" value="c">Charisma
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="scenario2Options" value="i">Intelligence
+          </label>
+        </div>
+        <button type="submit" id="scenario2Button">Submit</button>
+      </form>
+    </div>
+    <div id="scenario2Outcome">
+      <p>Because you chose strength this is what happened...</p>
+      <button type="button" id="scenario2Complete">Next</button>
+    </div>
+
+    <div id="scenario3">
+      <p>Scenario Text: How hungry are you?</p>
+      <form id="scenario3Form">
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="scenario3Options" value="a">Agility
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="scenario3Options" value="s">Strength
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="scenario3Options" value="c">Charisma
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="scenario3Options" value="i">Intelligence
+          </label>
+        </div>
+        <button type="submit" id="scenario3Button">Submit</button>
+      </form>
+    </div>
+    <div id="scenario3Outcome">
+      <p>Because you chose strength this is what happened...</p>
+      <button type="button" id="scenario3Complete">Next</button>
+    </div>
+
+    <div id="scenario4">
+      <p>Scenario Text: How hungry are you?</p>
+      <form id="scenario4Form">
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="scenario4Options" value="a">Agility
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="scenario4Options" value="s">Strength
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="scenario4Options" value="c">Charisma
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="scenario4Options" value="i">Intelligence
+          </label>
+        </div>
+        <button type="submit" id="scenario4Button">Submit</button>
+      </form>
+    </div>
+    <div id="scenario4Outcome">
+      <p>Because you chose strength this is what happened...</p>
+      <button type="button" id="scenario4Complete">Next</button>
+    </div>
+
+    <div id="results">
+      <div id="ending1">
+        <p>Agility Ending</p>
+      </div>
+      <div id="ending2">
+        <p>Strength Ending</p>
+      </div>
+      <div id="ending3">
+        <p>Charisma Ending</p>
+      </div>
+      <div id="ending4">
+        <p>Intelligence Ending</p>
+      </div>
+    </div>
   </body>
 </html>

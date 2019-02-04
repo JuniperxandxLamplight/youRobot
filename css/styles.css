@@ -1,0 +1,26 @@
+
+/* Divs to start hidden */
+#scenario1Outcome{
+  display: none;
+}
+#scenario2{
+  display: none;
+}
+#scenario2Outcome{
+  display: none;
+}
+#scenario3{
+  display: none;
+}
+#scenario3Outcome{
+  display: none;
+}
+#scenario4{
+  display: none;
+}
+#scenario4Outcome{
+  display: none;
+}
+#results{
+  display: none;
+}
