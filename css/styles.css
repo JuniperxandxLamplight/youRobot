@@ -1,6 +1,15 @@
 body{
   text-align: center;
 }
+
+.animated {
+   animation-iteration-count: 3;
+}
+
+.rollIn, .bounceInDown, .fadeInDown, .flipInX {
+  animation-iteration-count: 1;
+}
+
 #characterBar{
   width: 160px;
   position: fixed;
