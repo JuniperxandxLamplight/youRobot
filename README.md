@@ -12,7 +12,7 @@ _This application provides the user with the oppurtunity to go on a thrilling ad
 * _Spec: Will gather input of radio choice from user and return value._
 * _Spec: Will gather input from multiple questions and return accumulated value._
 * _Spec: User clicks through questions, corresponding page is displayed._
-* _Spec: Accumulated info is allocated to different categories - returns correct ending based on values._
+* _Spec: Accumulated info is allocated to different categories - returns corresponding ending based on values._
 
 
 ## Setup/Installation Requirements
