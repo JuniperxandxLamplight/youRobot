@@ -88,6 +88,14 @@ $(function(){
     $(".outcome").slideUp(500);
     var final = playerCharStats.decideEnd()
     $(final).fadeIn(500).delay(500);
+
+    if (final === "#ending-i") {
+      $("body").css('background-image', 'url(http://s3.amazonaws.com/assets.vision.org/uploadedimages/Home/Articles/winter2016-fourhorsemen-lead.jpg)');
+      $("body").css('background-color', 'grey');
+      $("body").css('color', 'white');
+      $("button").css('color', 'white');
+      $("h1").css('color', '#FF461D');
+    }
   });
 
   $("#refreshButton").click(function(){
