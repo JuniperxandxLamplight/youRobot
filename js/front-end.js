@@ -87,4 +87,8 @@ $(function(){
     $(".outcome").slideUp(500);
     $("#results").fadeIn(500).delay(500);
   });
+
+  $("#refreshButton").click(function(){
+    location.reload();
+  });
 });

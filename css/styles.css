@@ -70,6 +70,9 @@ body{
 .btn{
   margin: 5px;
 }
+#refreshButton{
+  margin-top: 30%;
+}
 /* Divs to start hidden */
 #characterBar p{
   display: none;
