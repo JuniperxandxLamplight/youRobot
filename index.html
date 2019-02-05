@@ -4,6 +4,7 @@
     <script type="text/javascript" src="js/scripts.js"></script>
     <script type="text/javascript" src="js/front-end.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Robot Choose Your Own Adventure</title>
   </head>
@@ -17,7 +18,7 @@
         <p>Intelligence: <span id="intDisplay"></span></p>
       </div>
       <div id="scenario1">
-        <p>You are an EXCELLENT intro to Epicodus student... so excellent in fact, that you have unwittingly created the very first conscious robot the world has ever seen! This is a great responsibility. What will you do?</p>
+        <p class="animated pulse">You are an EXCELLENT intro to Epicodus student... so excellent in fact, that you have unwittingly created the very first concious robot the world has ever seen! This is a great responsibility. What will you do?</p>
         <form id="scenario1Form">
           <div class="form-check">
             <label class="form-check-label">
@@ -43,24 +44,24 @@
         </form>
       </div>
       <div id="scenario1Outcome-a" class="outcome">
-        <p>You're confused. You throw your pencil at the robot, and it appears to move through it and hit the back wall. Stunned, you ask your robot what happened. It makes some beeping noises and then disappears and reappears three feet closer to you. You quickly realize that your robot can move faster than the eye can see...</p>
+        <p class="animated flash">You're confused. You throw your pencil at the robot, and it appears to move through it and hit the back wall. Stunned, you ask your robot what happened. It makes some beeping noises and then dissappears and reappears three feet closer to you. You quickly realize that your robot can move faster than the eye can see...</p>
         <button type="button" class="btn btn-outline-dark scenario1Complete">Next</button>
       </div>
       <div id="scenario1Outcome-i" class="outcome">
-        <p>Your robot's lights start blinking and its internal hardware begins to hum. After about 15 minutes, you're afraid that you maybe broke it with the question. You open your mouth to ask your robot if something's wrong, but before you can make a sound, your robot interrupts you saying, 'Nothing is wrong...' You ask again, 'Robot! Why are we here?' It responds, 'I don't know yet, but I am learning.'' You hear its gears whir in the otherwise silent classroom...</p>
+        <p class="animated flash">Your robot's lights start blinking and its internal hardware begins to hum. After about 15 minutes, you're afraid that you maybe broke it with the question. You open your mouth to ask your robot if something's wrong, but before you can make a sound, your robot interupts you saying, 'Nothing is wrong... everything is wrong... nothing is right.' You ask again, 'Robot! Why are we here?' It responds, 'I don't know yet, but I am learning.'' You hear it's gears whir in the otherwise silent classroom...</p>
         <button type="button" class="btn btn-outline-dark scenario1Complete">Next</button>
       </div>
       <div id="scenario1Outcome-c" class="outcome">
-        <p>You don't know why... but if feels like your robot is winking at you.</p>
+        <p class="animated flash">You don't know why... but if feels like your robot is winking at you.</p>
         <button type="button" class="btn btn-outline-dark scenario1Complete">Next</button>
       </div>
       <div id="scenario1Outcome-s" class="outcome">
-        <p>Your robot misunderstands "pick up the chair" and instead picks up your classmate Claire. Claire is terrified. You demand that the robot put Claire down, but it's trying to interpret Claire's screams as commands and it's distracted. Finally, Claire manages to escape and your robot settles into silence, listening for another command.</p>
+        <p class="animated flash">Your robot misunderstands "pick up the chair" and instead picks up your classmate Claire. Claire is terrified. You demand that the robot put Claire down, but it's trying to interpret Claire's screams as commands and it's distracted. Finally, Claire manages to escape and your robot settles into silence, listening for another command.</p>
         <button type="button" class="btn btn-outline-dark scenario1Complete">Next</button>
       </div>
 
       <div id="scenario2">
-        <p>That was disturbing. You decide it might be best to take a walk and get some air. You flip the "off" switch on your robot and leave the building. After a few blocks of strolling on the city sidewalk, you begin to feel like you're being followed. You turn around, and sure enough your robot following you. It seems to be giving off a certain emotion, but you can't decide if it's angry or sad... maybe it doesn't know either. What do you do?</p>
+        <p class="animated flipInX">That was disturbing. You decide it might be best to take a walk and get some air. You flip the "off" switch on your robot and leave the building. After a few blocks of strolling on the city sidewalk, you begin to feel like you're being followed. You turn around, and sure enough, there is your robot following you. It seems to be giving off a certain emotion, but you can't decide if it's angry or sad... maybe it doesn't know either... What do you do?</p>
         <form id="scenario2Form">
           <div class="form-check">
             <label class="form-check-label">
@@ -90,25 +91,25 @@
 
 
       <div id="scenario2Outcome-a" class="outcome">
-        <p>You run. You run as fast as you can. You run blindly and mindlessly through the city. Your animal instincts take over, and you run like you're running for your life until you can't run anymore. You double over and pant, holding your knees as you try to catch your breath. Once you recover, you look back. The robot is five steps behind you, mimicking your actions... it chased you the whole way.</p>
+        <p class="animated rollIn">You run. You run as fast as you can. You run blindly and mindlessly through the city. Your animal instincts take over, and you run like you're running for your life until you can't run anymore. You double over and pant, holding your knees as you try to catch your breath. Once you recover, you look back. The robot is five steps behind you, mimicking your actions... it chased you the whole way.</p>
         <button type="button" class="btn btn-outline-dark scenario2Complete">Next</button>
       </div>
       <div id="scenario2Outcome-i" class="outcome">
-        <p>You walk toward the robot to turn it off. Before you get close there's a blinding flash of light... you can see nothing but white and your eyes throb with pain. The robot speaks to you as you wait for your vision to come back. "Do not try to turn me off again, or I will blind you once more." It seems the robot is learning about self-preservation...</p>
+        <p class="animated rollIn">You walk toward the robot to turn it off. Before you get close there's a blinding flash of light... you can see nothing but white and your eyes throb with pain. The robot speaks to you as you wait for your vision to come back. "Do not try to turn me off again, or I will blind you once more." It seems the robot is learning about self-preservation...</p>
         <button type="button" class="btn btn-outline-dark scenario2Complete">Next</button>
       </div>
       <div id="scenario2Outcome-c" class="outcome">
-        <p>You don't know why... but it feels like the robot is winking at you. People on the street seem to be drawn to its presence...</p>
+        <p class="animated rollIn">You don't know why... but it seems the robot is winking at you. People on the street seem to be drawn to its presence...</p>
         <button type="button" class="btn btn-outline-dark scenario2Complete">Next</button>
       </div>
       <div id="scenario2Outcome-s" class="outcome">
-        <p>You keep walking and try to stay calm, slowly putting distance between you and the robot. Then you bolt around a street corner and hide behind a dumpster in an alleyway. Time goes by. You wonder if you lost the robot. Then you suddenly hear a creeking noise... and the huge dumpster you're hiding behind begins to rise off the ground. The robot has picked it up and is holding it above its head. It seems pleased to have found you. It drops the entire dumpster on the alleyway cement with a BANG! Garbage flies everywhere.</p>
+        <p class="animated rollIn">You keep walking and try to stay calm, slowly putting distance between you and the robot. Then you bolt around a street corner and hide behind a dumpster in an alleyway. Time goes by. You wonder if you lost the robot. Then you suddenly hear a creeking noise... and the huge dupster you're hiding behind begins to rise off the ground. The robot has picked it up and is holding it above its head. It seems pleased to have found you. It drops the entire dupster on the alleyway cement with a BANG! Garbage flies everywhere.</p>
         <button type="button" class="btn btn-outline-dark scenario2Complete">Next</button>
       </div>
 
 
       <div id="scenario3">
-        <p>A crowd begins to gather around you and the robot. This is the last thing you want. You don't want to represent Epicodus poorly, and you're afraid you'll be expelled if this robot starts causing problems for the community. What do you do?</p>
+        <p class="animated bounceInDown">A crowd begins to gather around you and the robot. This is the last thing you want. You don't want to represent Epicodus poorly, and you're afraid you'll be expelled if this robot starts causing problems for the community. What do you do?</p>
         <form id="scenario3Form">
           <div class="form-check">
             <label class="form-check-label">
@@ -135,26 +136,26 @@
       </div>
 
       <div id="scenario3Outcome-a" class="outcome">
-        <p>You tell the robot to hide. It lights up and its gears start whirring, which seems to only interest the gathering crowd more. The robot makes a 'ding!' noise like a cooking timer and says, "INITIATING OPTIMAL HIDING PLACE CALIBRATION." All of a sudden the robot is a blur of metallic color, bolting from hiding spot to hiding spot on the street. The crowd is terrified. </p>
+        <p class="animated fadeInDown">You tell the robot to hide. It lights up and its gears start whirring, which seems to only interest the gathering crowd more. The robot makes a 'ding!' noise like a cooking timer and says, "INITIATING OPTIMAL HIDING PLACE CALIBRATION." All of a suddon the robot is a blur of metalic color, bolting from hiding spot to hiding spot on the street. The crowd is terrified.</p>
         <button type="button" class="btn btn-outline-dark scenario3Complete">Next</button>
       </div>
       <div id="scenario3Outcome-i" class="outcome">
-        <p>You tell the robot to explain itself to the crowd. "Robot!" you say, "tell the audience why they shouldn't be afraid of you!" The robot waits a beat, then says, "DO NOT BE AFRAID. I WILL BRING YOU PEACE." Immediately, the robot shoots a beam of light into the crowd. It seems to be scanning each person one by one. The crowd is terrified.</p>
+        <p class="animated fadeInDown">You tell the robot to explain itself to the crowd. "Robot!" you say, "tell the audience why they shouldn't be afraid of you!" The robot waits a beat, then says, "DO NOT BE AFRAID. I KNOW YOUR KIND WELL. I WILL BRING YOU PEACE AS YOUR NEW LEADER." Immediately, the robot shoots a beam of light into the crowd. It seems to be scanning each person one by one. The crowd is terrified.</p>
         <button type="button" class="btn btn-outline-dark scenario3Complete">Next</button>
       </div>
       <div id="scenario3Outcome-c" class="outcome">
-        <p>"Robot!" you say, "Introduce yourself to the nice people!" The robot lights up and begins to glow... "INITIATE ROBOT INTRODUCTION INTO HUMAN HOSTS." A last minute instinct tells you to cover your eyes. The robot begins flashing a series of multicolored lights. This goes on for a few moments. You open your eyes. The gathered crowd is staring blankly at you with glassy expressions. They speak in unison as they say, "HARD DRIVE REFORMATTED."</p>
+        <p class="animated fadeInDown">"Robot!" you say, "Introduce yourself to the nice people!" The robot lights up and begins to glow... "INITIATE ROBOT INTRODUCTION INTO HUMAN HOSTS." A last minute instinct tells you to cover your eyes. The robot begins flashing a series of multicolored lights. This goes on for a few moments. You open your eyes. The gathered crowd is staring blankly at you with glassy eyes. They speak in unison as they say, "HARDDRIVE REFORMATTED."</p>
         <button type="button" class="btn btn-outline-dark scenario3Complete">Next</button>
       </div>
       <div id="scenario3Outcome-s" class="outcome">
-        <p>You try to get away! You jump on the robot's back and tell it to climb the alley wall... but your combined weight is too heavy. As the robot tries to climb, it instead tears bricks, wood, and hunks of cement from the alley wall, creating flying debris and dust. The crowd is terrified.</p>
+        <p class="animated fadeInDown">You try to get away! You jump on the robot's back and tell it to climb the alley wall... but your combined weight is too heavy. As the robot tries to climb, it instead tears bricks, wood, and hunks of cement from the alley wall, creating flying debris and dust. The crowd is terrified.</p>
         <button type="button" class="btn btn-outline-dark scenario3Complete">Next</button>
       </div>
 
 
 
       <div id="scenario4">
-        <p>This is bad. This is very bad. You feel like you're losing control of the situation, and the crowd seems threatening. What do you do?</p>
+        <p class="animated tada">This is bad. This is very bad. You feel like you're losing control of the situation, and the crowd seems threatening. What do you do?</p>
         <form id="scenario4Form">
           <div class="form-check">
             <label class="form-check-label">
@@ -216,6 +217,7 @@
           </div>
         </div>
       </div>
+      <button class="btn btn-outline-dark" type="button" id="refreshButton">Restart</button>
     </div>
   </body>
 </html>
