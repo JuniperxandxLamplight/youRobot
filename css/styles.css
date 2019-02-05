@@ -50,13 +50,8 @@ body{
 }
 
 #results {
-  margin-top: 250px;
-  background-image:linear-gradient(rgba(122, 122, 122, .5), rgba(61, 61, 61, .5));
-  box-shadow: 0px 10px 5px rgba(100, 100, 100, .5);
-  border-radius: 25px;
-  padding: 2%;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-top: 175px;
+
 }
 .btn{
   margin: 5px;
@@ -88,9 +83,5 @@ body{
 }
 
 .outcome {
-  display: none;
-}
-
-#results{
   display: none;
 }

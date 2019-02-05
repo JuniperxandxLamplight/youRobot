@@ -31,15 +31,15 @@ charStats.prototype.pushStat = function(input) {
 
 
 
-charStats.prototype.decideEnd = function(input) {
+charStats.prototype.decideEnd = function() {
   if (this.agility > this.intelligence && this.agility > this.charisma && this.agility > this.strength) {
-    return "#ending1";
+    return "#ending-a";
   } else if (this.strength > this.intelligence && this.strength > this.charisma && this.strength > this.agility) {
-    return "#ending2";
+    return "#ending-s";
   }else if (this.charisma > this.intelligence && this.charisma > this.agility && this.charisma > this.strength) {
-    return "#ending3";
+    return "#ending-c";
   }else if (this.intelligence > this.charisma && this.intelligence > this.strength && this.intelligence > this.agility) {
-    return "#ending4";
+    return "#ending-i";
   }
 
 
