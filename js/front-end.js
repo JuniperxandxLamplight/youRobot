@@ -94,7 +94,7 @@ $(function(){
       $("body").css('background-color', 'grey');
       $("body").css('color', 'white');
       $("button").css('color', 'white');
-      $("h1").css('color', '#FF461D');
+      $("h1").css('text-shadow', '0px 0px 8px black');
     }
   });
 
