@@ -16,11 +16,35 @@ charStats.prototype.pushStat = function(input) {
     this.strength += 15;
     }
   }
+  charStats.prototype.pushStatFirst = function(input) {
+    if (input == "a") {
+      this.agility += 18;
+    } else if (input == "i") {
+      this.intelligence += 18;
+    } else if (input == "c") {
+      this.charisma += 18;
+    } else if (input == "s") {
+      this.strength += 18;
+      }
+    }
 
 
 
 
+charStats.prototype.decideEnd = function(input) {
+  if (this.agility > this.intelligence && this.agility > this.charisma && this.agility > this.strength) {
+    return "#ending1";
+  } else if (this.strength > this.intelligence && this.strength > this.charisma && this.strength > this.agility) {
+    return "#ending2";
+  }else if (this.charisma > this.intelligence && this.charisma > this.agility && this.charisma > this.strength) {
+    return "#ending3";
+  }else if (this.intelligence > this.charisma && this.intelligence > this.strength && this.intelligence > this.agility) {
+    return "#ending4";
+  }
 
+
+
+}
 $(document).ready(function () {
   var playerCharStats = new charStats
   $('#submit-action').click(function(event) {

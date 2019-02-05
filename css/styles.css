@@ -20,7 +20,26 @@ body{
   background-color: #3a3a3a;
   color: white;
 }
-#scenario1, #scenario1Outcome, #scenario2, #scenario2Outcome, #scenario3, #scenario3Outcome, #scenario4, #scenario4Outcome{
+#scenario1,
+#scenario1Outcome-a,
+#scenario1Outcome-s,
+#scenario1Outcome-c,
+#scenario1Outcome-i,
+#scenario2,
+#scenario2Outcome-a,
+#scenario2Outcome-s,
+#scenario2Outcome-c,
+#scenario2Outcome-i,
+#scenario3,
+#scenario3Outcome-a,
+#scenario3Outcome-s,
+#scenario3Outcome-c,
+#scenario3Outcome-i,
+#scenario4,
+#scenario4Outcome-a,
+#scenario4Outcome-s,
+#scenario4Outcome-c,
+#scenario4Outcome-i{
   margin-top: 250px;
   background-image:linear-gradient(rgba(122, 122, 122, .5), rgba(61, 61, 61, .5));
   box-shadow: 0px 10px 5px rgba(100, 100, 100, .5);
@@ -67,6 +86,11 @@ body{
 #scenario4Outcome{
   display: none;
 }
+
+.outcome {
+  display: none;
+}
+
 #results{
   display: none;
 }
