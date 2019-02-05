@@ -84,8 +84,10 @@ $(function(){
     };
   });
   $(".scenario4Complete").click(function(){
+    console.log(playerCharStats.decideEnd());
     $(".outcome").slideUp(500);
-    $("#results").fadeIn(500).delay(500);
+    var final = playerCharStats.decideEnd()
+    $(final).fadeIn(500).delay(500);
   });
 
   $("#refreshButton").click(function(){
