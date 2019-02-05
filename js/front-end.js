@@ -6,14 +6,19 @@ $(function(){
 
   $("#scenario1Form").submit(function(event){
     event.preventDefault();
-    $("#scenario1").slideUp(500);
     var stat = $("input:radio[name=scenario1Options]:checked").val();
-    playerCharStats.pushStatFirst(stat)
-    $("#scenario1Outcome-"+stat).fadeIn(500).delay(500);
-    $("#agilDisplay").html(playerCharStats.agility);
-    $("#strDisplay").html(playerCharStats.strength);
-    $("#charDisplay").html(playerCharStats.charisma);
-    $("#intDisplay").html(playerCharStats.intelligence);
+    playerCharStats.pushStatFirst(stat);
+    if (!stat){
+      $("#scenario1Form").addClass("animated shake");
+    } else{
+      $("#scenario1Form").removeClass("animated shake");
+      $("#scenario1").slideUp(500);
+      $("#scenario1Outcome-"+stat).fadeIn(500).delay(500);
+      $("#agilDisplay").html(playerCharStats.agility);
+      $("#strDisplay").html(playerCharStats.strength);
+      $("#charDisplay").html(playerCharStats.charisma);
+      $("#intDisplay").html(playerCharStats.intelligence);
+    };
   });
   $(".scenario1Complete").click(function(){
     $(".outcome").slideUp(500);
@@ -22,14 +27,19 @@ $(function(){
 
   $("#scenario2Form").submit(function(event){
     event.preventDefault();
-    $("#scenario2").slideUp(500);
     var stat = $("input:radio[name=scenario2Options]:checked").val();
-    playerCharStats.pushStat(stat)
-    $("#scenario2Outcome-"+stat).fadeIn(500).delay(500);
-    $("#agilDisplay").html(playerCharStats.agility);
-    $("#strDisplay").html(playerCharStats.strength);
-    $("#charDisplay").html(playerCharStats.charisma);
-    $("#intDisplay").html(playerCharStats.intelligence);;
+    playerCharStats.pushStat(stat);
+    if (!stat){
+      $("#scenario2Form").addClass("animated shake");
+    } else{
+      $("#scenario2Form").removeClass("animated shake");
+      $("#scenario2").slideUp(500);
+      $("#scenario2Outcome-"+stat).fadeIn(500).delay(500);
+      $("#agilDisplay").html(playerCharStats.agility);
+      $("#strDisplay").html(playerCharStats.strength);
+      $("#charDisplay").html(playerCharStats.charisma);
+      $("#intDisplay").html(playerCharStats.intelligence);
+    };
   });
   $(".scenario2Complete").click(function(){
     $(".outcome").slideUp(500);
@@ -38,15 +48,19 @@ $(function(){
 
   $("#scenario3Form").submit(function(event){
     event.preventDefault();
-    $("#scenario3").slideUp(500);
     var stat = $("input:radio[name=scenario3Options]:checked").val();
-    playerCharStats.pushStat(stat)
-    $("#scenario3Outcome-"+stat).fadeIn(500).delay(500);
-    $("#agilDisplay").html(playerCharStats.agility);
-    $("#strDisplay").html(playerCharStats.strength);
-    $("#charDisplay").html(playerCharStats.charisma);
-    $("#intDisplay").html(playerCharStats.intelligence);;
-
+    playerCharStats.pushStat(stat);
+    if (!stat){
+      $("#scenario3Form").addClass("animated shake");
+    } else{
+      $("#scenario3Form").removeClass("animated shake");
+      $("#scenario3").slideUp(500);
+      $("#scenario3Outcome-"+stat).fadeIn(500).delay(500);
+      $("#agilDisplay").html(playerCharStats.agility);
+      $("#strDisplay").html(playerCharStats.strength);
+      $("#charDisplay").html(playerCharStats.charisma);
+      $("#intDisplay").html(playerCharStats.intelligence);
+    };
   });
   $(".scenario3Complete").click(function(){
     $(".outcome").slideUp(500);
@@ -55,14 +69,19 @@ $(function(){
 
   $("#scenario4Form").submit(function(event){
     event.preventDefault();
-    $("#scenario4").slideUp(500);
     var stat = $("input:radio[name=scenario4Options]:checked").val();
-    playerCharStats.pushStat(stat)
-    $("#scenario4Outcome-"+stat).fadeIn(500).delay(500);
-    $("#agilDisplay").html(playerCharStats.agility);
-    $("#strDisplay").html(playerCharStats.strength);
-    $("#charDisplay").html(playerCharStats.charisma);
-    $("#intDisplay").html(playerCharStats.intelligence);;
+    playerCharStats.pushStat(stat);
+    if (!stat){
+      $("#scenario4Form").addClass("animated shake");
+    } else{
+      $("#scenario4Form").removeClass("animated shake");
+      $("#scenario4").slideUp(500);
+      $("#scenario4Outcome-"+stat).fadeIn(500).delay(500);
+      $("#agilDisplay").html(playerCharStats.agility);
+      $("#strDisplay").html(playerCharStats.strength);
+      $("#charDisplay").html(playerCharStats.charisma);
+      $("#intDisplay").html(playerCharStats.intelligence);
+    };
   });
   $(".scenario4Complete").click(function(){
     $(".outcome").slideUp(500);

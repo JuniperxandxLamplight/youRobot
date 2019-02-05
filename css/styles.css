@@ -6,7 +6,7 @@ body{
    animation-iteration-count: 3;
 }
 
-.rollIn, .bounceInDown, .fadeInDown, .flipInX {
+.rollIn, .bounceInDown, .fadeInDown, .flipInX, .shake {
   animation-iteration-count: 1;
 }
 
