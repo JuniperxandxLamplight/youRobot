@@ -16,7 +16,7 @@ body{
 }
 
 #characterBar{
-  width: 160px;
+  width: 220px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -34,6 +34,17 @@ body{
   background-color: #3a3a3a;
   color: white;
 }
+.imgs {
+  padding-top: 100px;
+}
+img {
+  height: 400px;
+  width: 225px;
+}
+#pimg{
+  margin: 0;
+}
+#startScreen,
 #scenario1,
 #scenario1Outcome-a,
 #scenario1Outcome-s,
@@ -59,7 +70,6 @@ body{
 #scenario4Outcome-i,
 #scenario4Outcome-h,
 .outcome{
-  margin-top: 250px;
   background-image:linear-gradient(rgba(122, 122, 122, .5), rgba(61, 61, 61, .5));
   box-shadow: 0px 10px 5px rgba(100, 100, 100, .5);
   border-radius: 25px;
@@ -100,19 +110,29 @@ body{
   padding-top: 1%;
 }
 
-
-#results {
+#ending-a,
+#ending-s,
+#ending-c,
+#ending-i,
+#ending-h{
   margin-top: 175px;
-
 }
 .btn{
   margin: 15px;
 }
 #refreshButton{
+  display: none;
   margin-top: 5%;
+}
+#characterForm{
+  padding-left: 46%;
+  padding-right: 46%;
 }
 /* Divs to start hidden */
 #characterBar p{
+  display: none;
+}
+#scenario1{
   display: none;
 }
 #scenario1Outcome{
@@ -136,7 +156,6 @@ body{
 #scenario4Outcome{
   display: none;
 }
-
 .outcome {
   display: none;
 }

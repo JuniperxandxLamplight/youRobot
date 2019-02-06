@@ -4,6 +4,7 @@
     <script type="text/javascript" src="js/scripts.js"></script>
     <script type="text/javascript" src="js/front-end.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Robot Choose Your Own Adventure</title>
@@ -12,11 +13,31 @@
     <div class="container">
       <div id="characterBar">
         <h5>Character Stats</h5>
-        <p>Agility: <span id="agilDisplay"></span></p>
-        <p>Strength: <span id="strDisplay"></span></p>
-        <p>Charisma: <span id="charDisplay"></span></p>
-        <p>Intelligence: <span id="intDisplay"></span></p>
-        <p>Humanity: <span id="humDisplay"></span></p>
+        <p>Agility = <span id="agilDisplay"></span></p>
+        <p>Strength = <span id="strDisplay"></span></p>
+        <p>Charisma = <span id="charDisplay"></span></p>
+        <p>Intelligence = <span id="intDisplay"></span></p>
+        <p>Humanity = <span id="humDisplay"></span></p>
+      </div>
+      <div class="container imgs">
+        <div class="row">
+          <div class="col-md-6">
+            <p id="pimg"><img id="character" src="img/girl-neutral.png"></p>
+          </div>
+          <div class="col-md-6">
+            <p id="pimg"><img id="robot" src="img/guy-neutral.png"></p>
+          </div>
+        </div>
+      </div>
+      <div id="startScreen">
+        <p>Which character would you like to play as?</p>
+        <form id="characterForm">
+          <select class="form-control" id="characterSelect">
+            <option>guy</option>
+            <option>girl</option>
+          </select>
+          <button class="btn btn-outline-dark" type="submit" id="start">Start</button>
+        </form>
       </div>
       <div id="scenario1">
         <p class="animated pulse">You are an EXCELLENT intro to Epicodus student... so excellent in fact, that you have unwittingly created the very first concious robot the world has ever seen! This is a great responsibility. What will you do?</p>
@@ -152,7 +173,7 @@
           </div>
           <div class="form-check">
             <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="scenario3Options" value="h">You try to turn it off.
+              <input type="radio" class="form-check-input" name="scenario3Options" value="h">You try to turn it off again.
             </label>
           </div>
           <button class="btn btn-outline-dark" type="submit" id="scenario3Button">Submit</button>
