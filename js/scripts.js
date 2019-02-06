@@ -45,7 +45,7 @@ charStats.prototype.decideEnd = function() {
     return "#ending-c";
   }else if (this.intelligence > this.charisma && this.intelligence > this.strength && this.intelligence > this.agility && this.intelligence > this.humanity) {
     return "#ending-i";
-  }else if (this.humanity > this.charisma && this.humanity > this.strength && this.humanity > this.agility && this.agility > this.intelligence) {
+  }else if (this.humanity > this.charisma && this.humanity > this.strength && this.humanity > this.agility && this.humanity > this.intelligence) {
     return "#ending-h";
   }
 
