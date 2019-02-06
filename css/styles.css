@@ -13,7 +13,7 @@ body{
 }
 
 #characterBar{
-  width: 160px;
+  width: 220px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -60,7 +60,9 @@ body{
   margin-left: 10%;
   margin-right: 10%;
 }
-
+#results{
+  margin-top: 30%;
+}
 .btn{
   margin: 5px;
 }

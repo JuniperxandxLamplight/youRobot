@@ -28,11 +28,17 @@ $(function(){
       $("#scenario1Form").removeClass("animated shake");
       $("#scenario1").slideUp(500);
       $("#scenario1Outcome-"+stat).fadeIn(500).delay(500);
-      $("#agilDisplay").html(playerCharStats.agility);
-      $("#strDisplay").html(playerCharStats.strength);
-      $("#charDisplay").html(playerCharStats.charisma);
-      $("#intDisplay").html(playerCharStats.intelligence);
-      $("#humDisplay").html(playerCharStats.humanity);
+      if (stat == "a") {
+        $("#agilDisplay").append('<span class="fas fa-bolt"></span><span class="fas fa-bolt"></span>');
+      } else if (stat == "s") {
+        $("#strDisplay").append('<span class="fas fa-fist-raised"></span><span class="fas fa-fist-raised"></span>');
+      } else if (stat == "c") {
+        $("#charDisplay").append('<span class="fas fa-grin"></span><span class="fas fa-grin"></span>');
+      } else if (stat == "i") {
+        $("#intDisplay").append('<span class="fas fa-brain"></span><span class="fas fa-brain"></span>');
+      } else if (stat == "h") {
+        $("#humDisplay").append('<span class="fas fa-male"></span><span class="fas fa-male"></span>');
+      }
     };
   });
   $(".scenario1Complete").click(function(){
@@ -50,11 +56,17 @@ $(function(){
       $("#scenario2Form").removeClass("animated shake");
       $("#scenario2").slideUp(500);
       $("#scenario2Outcome-"+stat).fadeIn(500).delay(500);
-      $("#agilDisplay").html(playerCharStats.agility);
-      $("#strDisplay").html(playerCharStats.strength);
-      $("#charDisplay").html(playerCharStats.charisma);
-      $("#intDisplay").html(playerCharStats.intelligence);
-      $("#humDisplay").html(playerCharStats.humanity);
+      if (stat == "a") {
+        $("#agilDisplay").append('<span class="fas fa-bolt"></span>');
+      } else if (stat == "s") {
+        $("#strDisplay").append('<span class="fas fa-fist-raised"></span>');
+      } else if (stat == "c") {
+        $("#charDisplay").append('<span class="fas fa-grin"></span>');
+      } else if (stat == "i") {
+        $("#intDisplay").append('<span class="fas fa-brain"></span>');
+      } else if (stat == "h") {
+        $("#humDisplay").append('<span class="fas fa-male"></span>');
+      }
       document.getElementById('character').src = 'img/' + character + '-scared.png';
       document.getElementById('robot').src = 'img/robot-orange.png';
     };
@@ -74,11 +86,17 @@ $(function(){
       $("#scenario3Form").removeClass("animated shake");
       $("#scenario3").slideUp(500);
       $("#scenario3Outcome-"+stat).fadeIn(500).delay(500);
-      $("#agilDisplay").html(playerCharStats.agility);
-      $("#strDisplay").html(playerCharStats.strength);
-      $("#charDisplay").html(playerCharStats.charisma);
-      $("#intDisplay").html(playerCharStats.intelligence);
-      $("#humDisplay").html(playerCharStats.humanity);
+      if (stat == "a") {
+        $("#agilDisplay").append('<span class="fas fa-bolt"></span>');
+      } else if (stat == "s") {
+        $("#strDisplay").append('<span class="fas fa-fist-raised"></span>');
+      } else if (stat == "c") {
+        $("#charDisplay").append('<span class="fas fa-grin"></span>');
+      } else if (stat == "i") {
+        $("#intDisplay").append('<span class="fas fa-brain"></span>');
+      } else if (stat == "h") {
+        $("#humDisplay").append('<span class="fas fa-male"></span>');
+      }
     };
   });
   $(".scenario3Complete").click(function(){
@@ -96,11 +114,17 @@ $(function(){
       $("#scenario4Form").removeClass("animated shake");
       $("#scenario4").slideUp(500);
       $("#scenario4Outcome-"+stat).fadeIn(500).delay(500);
-      $("#agilDisplay").html(playerCharStats.agility);
-      $("#strDisplay").html(playerCharStats.strength);
-      $("#charDisplay").html(playerCharStats.charisma);
-      $("#intDisplay").html(playerCharStats.intelligence);
-      $("#humDisplay").html(playerCharStats.humanity);
+      if (stat == "a") {
+        $("#agilDisplay").append('<span class="fas fa-bolt"></span>');
+      } else if (stat == "s") {
+        $("#strDisplay").append('<span class="fas fa-fist-raised"></span>');
+      } else if (stat == "c") {
+        $("#charDisplay").append('<span class="fas fa-grin"></span>');
+      } else if (stat == "i") {
+        $("#intDisplay").append('<span class="fas fa-brain"></span>');
+      } else if (stat == "h") {
+        $("#humDisplay").append('<span class="fas fa-male"></span>');
+      }
       document.getElementById('character').src = 'img/' + character + '-angry.png';
       document.getElementById('robot').src = 'img/robot-red.png';
     };
@@ -109,7 +133,7 @@ $(function(){
     console.log(playerCharStats.decideEnd());
     $("#character").hide();
     $("#robot").hide();
-    $(".outcome").slideUp(500);
+    $(".outcome").hide();
     var final = playerCharStats.decideEnd()
     $(final).fadeIn(500).delay(500);
 
