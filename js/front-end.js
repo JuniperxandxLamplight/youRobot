@@ -96,6 +96,14 @@ $(function(){
       $("button").css('color', 'white');
       $("h1").css('text-shadow', '0px 0px 8px black');
     }
+    if (final === "#ending-a") {
+      $("body").css('background-image', 'url(https://images.unsplash.com/photo-1532178324009-6b6adeca1741?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3496&q=80)');
+      $("body").css('background-size', 'cover');
+      $("body").css('background-color', 'grey');
+      $("body").css('color', '#51FFC1');
+      $("button").css('color', '#51FFC1');
+      $("h1").css('text-shadow', '0px 0px 8px black');
+    }
   });
 
   $("#refreshButton").click(function(){
