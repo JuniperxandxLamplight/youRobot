@@ -2,7 +2,10 @@ body{
   text-align: center;
   background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
 }
+
+
 
 .animated {
    animation-iteration-count: 3;
@@ -46,22 +49,26 @@ img {
 #scenario1Outcome-a,
 #scenario1Outcome-s,
 #scenario1Outcome-c,
-#scenario1Outcome-i,
+#scenario1Outcome-i
+#scenario1Outcome-h,
 #scenario2,
 #scenario2Outcome-a,
 #scenario2Outcome-s,
 #scenario2Outcome-c,
 #scenario2Outcome-i,
+#scenario2Outcome-h,
 #scenario3,
 #scenario3Outcome-a,
 #scenario3Outcome-s,
 #scenario3Outcome-c,
 #scenario3Outcome-i,
+#scenario3Outcome-h,
 #scenario4,
 #scenario4Outcome-a,
 #scenario4Outcome-s,
 #scenario4Outcome-c,
 #scenario4Outcome-i,
+#scenario4Outcome-h,
 .outcome{
   background-image:linear-gradient(rgba(122, 122, 122, .5), rgba(61, 61, 61, .5));
   box-shadow: 0px 10px 5px rgba(100, 100, 100, .5);
@@ -69,16 +76,49 @@ img {
   padding: 2%;
   margin-left: 10%;
   margin-right: 10%;
+  height: 400px;
+  display: relative;
 }
+
+#scenario1Outcome-a,
+#scenario1Outcome-s,
+#scenario1Outcome-c,
+#scenario1Outcome-i,
+#scenario1Outcome-h,
+#scenario2Outcome-a,
+#scenario2Outcome-s,
+#scenario2Outcome-c,
+#scenario2Outcome-i,
+#scenario2Outcome-h,
+#scenario3Outcome-a,
+#scenario3Outcome-s,
+#scenario3Outcome-c,
+#scenario3Outcome-i,
+#scenario3Outcome-h,
+#scenario4Outcome-a,
+#scenario4Outcome-s,
+#scenario4Outcome-c,
+#scenario4Outcome-i,
+#scenario4Outcome-h {
+  padding-top: 13%;
+}
+
+#scenario1Form,
+#scenario2Form,
+#scenario3Form,
+#scenario4Form {
+  padding-top: 1%;
+}
+
 #ending-a,
 #ending-s,
 #ending-c,
 #ending-i,
 #ending-h{
-  margin-top: 30%;
+  margin-top: 175px;
 }
 .btn{
-  margin: 5px;
+  margin: 15px;
 }
 #refreshButton{
   display: none;
