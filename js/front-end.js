@@ -54,7 +54,9 @@ $(function(){
     };
   });
   $(".scenario2Complete").click(function(){
-    $("body").css('background-image', 'url(img/crowdbetter.jpeg)');
+    $("body").css('background-image', 'url(img/alley.jpeg)');
+    $("body").css('background-position', 'center');
+    $("body").css('background-size', 'cover');
     $("body").css('background-color', 'grey');
     $("body").css('color', 'white');
     $("button").css('color', 'white');
@@ -71,7 +73,7 @@ $(function(){
       $("#scenario3Form").addClass("animated shake");
     } else{
       $("#scenario3Form").removeClass("animated shake");
-      $("#scenario3").slideUp(500);
+      $("#scenario3").hide();
       $("#scenario3Outcome-"+stat).fadeIn(500).delay(500);
       $("#agilDisplay").html(playerCharStats.agility);
       $("#strDisplay").html(playerCharStats.strength);
@@ -81,8 +83,9 @@ $(function(){
     };
   });
   $(".scenario3Complete").click(function(){
-    $("body").css('background-image', 'url(img/crowd-blur.jpeg)');
+    $("body").css('background-image', 'url(img/crowd3.jpeg)');
     $("body").css('background-color', 'grey');
+    $("body").css('background-size', 'cover');
     $("body").css('color', 'white');
     $("button").css('color', 'white');
     $("h1").css('text-shadow', '0px 0px 8px black');
@@ -98,7 +101,7 @@ $(function(){
       $("#scenario4Form").addClass("animated shake");
     } else{
       $("#scenario4Form").removeClass("animated shake");
-      $("#scenario4").slideUp(500);
+      $("#scenario4").hide();
       $("#scenario4Outcome-"+stat).fadeIn(500).delay(500);
       $("#agilDisplay").html(playerCharStats.agility);
       $("#strDisplay").html(playerCharStats.strength);
@@ -108,7 +111,6 @@ $(function(){
     };
   });
   $(".scenario4Complete").click(function(){
-    console.log(playerCharStats.decideEnd());
     $(".outcome").slideUp(500);
     var final = playerCharStats.decideEnd()
     $(final).fadeIn(500).delay(500);
@@ -123,7 +125,7 @@ $(function(){
     if (final === "#ending-a") {
       $("body").css('background-image', 'url(https://images.unsplash.com/photo-1532178324009-6b6adeca1741?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3496&q=80)');
       $("body").css('background-size', 'cover');
-      $("body").css('background-color', 'grey');
+      $("body").css('background-color', 'black');
       $("body").css('color', '#51FFC1');
       $("button").css('color', '#51FFC1');
       $("h1").css('text-shadow', '0px 0px 8px black');
@@ -131,7 +133,7 @@ $(function(){
     if (final === "#ending-c") {
       $("body").css('background-image', 'url(https://images.unsplash.com/photo-1510885154241-75e69f87acae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2251&q=80)');
       $("body").css('background-size', 'cover');
-      $("body").css('background-color', 'grey');
+      $("body").css('background-color', 'black');
       $("body").css('color', 'white');
       $("button").css('color', 'white');
       $("h1").css('text-shadow', '0px 0px 8px black');

@@ -2,6 +2,7 @@ body{
   text-align: center;
   background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .animated {
@@ -59,7 +60,9 @@ body{
   padding: 2%;
   margin-left: 10%;
   margin-right: 10%;
+  /* height: 300px */
 }
+
 
 #results {
   margin-top: 175px;
@@ -69,7 +72,7 @@ body{
   margin: 5px;
 }
 #refreshButton{
-  margin-top: 30%;
+  margin-top: 5%;
 }
 /* Divs to start hidden */
 #characterBar p{
