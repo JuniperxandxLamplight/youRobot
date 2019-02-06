@@ -54,12 +54,9 @@ $(function(){
       $("#strDisplay").html(playerCharStats.strength);
       $("#charDisplay").html(playerCharStats.charisma);
       $("#intDisplay").html(playerCharStats.intelligence);
-<<<<<<< HEAD
+      $("#humDisplay").html(playerCharStats.humanity);
       document.getElementById('character').src = 'img/' + character + '-scared.png';
       document.getElementById('robot').src = 'img/robot-orange.png';
-=======
-      $("#humDisplay").html(playerCharStats.humanity);
->>>>>>> master
     };
   });
   $(".scenario2Complete").click(function(){
@@ -103,12 +100,9 @@ $(function(){
       $("#strDisplay").html(playerCharStats.strength);
       $("#charDisplay").html(playerCharStats.charisma);
       $("#intDisplay").html(playerCharStats.intelligence);
-<<<<<<< HEAD
+      $("#humDisplay").html(playerCharStats.humanity);
       document.getElementById('character').src = 'img/' + character + '-angry.png';
       document.getElementById('robot').src = 'img/robot-red.png';
-=======
-      $("#humDisplay").html(playerCharStats.humanity);
->>>>>>> master
     };
   });
   $(".scenario4Complete").click(function(){
