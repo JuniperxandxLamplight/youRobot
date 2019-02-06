@@ -11,6 +11,7 @@ $(function(){
     };
     document.getElementById('character').src = 'img/' + character + '-neutral.png';
     document.getElementById('robot').src = 'img/robot-green.png';
+    $("#refreshButton").show();
     $("#startScreen").slideUp(500);
     $("#scenario1").fadeIn(500).delay(500);
   });
