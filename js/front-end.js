@@ -9,7 +9,8 @@ $(function(){
     } else if (newChar == "girl"){
       character = "girl";
     };
-    $("#character").src = 'img/' + character + '"'-neutral.png'"';
+    document.getElementById('character').src = 'img/' + character + '-neutral.png';
+    document.getElementById('robot').src = 'img/robot-green.png';
     $("#startScreen").slideUp(500);
     $("#scenario1").fadeIn(500).delay(500);
   });
@@ -52,6 +53,8 @@ $(function(){
       $("#strDisplay").html(playerCharStats.strength);
       $("#charDisplay").html(playerCharStats.charisma);
       $("#intDisplay").html(playerCharStats.intelligence);
+      document.getElementById('character').src = 'img/' + character + '-scared.png';
+      document.getElementById('robot').src = 'img/robot-orange.png';
     };
   });
   $(".scenario2Complete").click(function(){
@@ -94,10 +97,14 @@ $(function(){
       $("#strDisplay").html(playerCharStats.strength);
       $("#charDisplay").html(playerCharStats.charisma);
       $("#intDisplay").html(playerCharStats.intelligence);
+      document.getElementById('character').src = 'img/' + character + '-angry.png';
+      document.getElementById('robot').src = 'img/robot-red.png';
     };
   });
   $(".scenario4Complete").click(function(){
     console.log(playerCharStats.decideEnd());
+    $("#character").hide();
+    $("#robot").hide();
     $(".outcome").slideUp(500);
     var final = playerCharStats.decideEnd()
     $(final).fadeIn(500).delay(500);

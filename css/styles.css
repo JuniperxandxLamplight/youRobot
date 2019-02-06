@@ -66,6 +66,10 @@ body{
   display: none;
   margin-top: 5%;
 }
+#characterForm{
+  padding-left: 46%;
+  padding-right: 46%;
+}
 /* Divs to start hidden */
 #characterBar p{
   display: none;
