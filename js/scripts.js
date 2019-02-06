@@ -46,26 +46,9 @@ charStats.prototype.decideEnd = function() {
   }else if (this.intelligence > this.charisma && this.intelligence > this.strength && this.intelligence > this.agility && this.intelligence > this.humanity) {
     return "#ending-i";
   }else if (this.humanity > this.charisma && this.humanity > this.strength && this.humanity > this.agility && this.agility > this.intelligence) {
-    return "#ending-i";
+    return "#ending-h";
   }
 
 
 
 }
-$(document).ready(function () {
-  var playerCharStats = new charStats
-  $('#submit-action').click(function(event) {
-    event.preventDefault();
-    var stat = $("input:radio[name=scene-select-1]:checked").val();
-    playerCharStats.pushStat(stat)
-    console.log(playerCharStats);
-
-    // $(".test").text(playerCharStats.agility);
-
-
-
-});
-
-
-
-});
