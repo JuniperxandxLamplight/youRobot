@@ -12,7 +12,6 @@ _This application provides the user with the oppurtunity to go on a thrilling ad
 
 Specification | Input | Output
 ------------- | ----- | ------
-
 Will gather input of radio choice from user | radio(a): checked | value = a
 Will store input value in player object | value = a | Player{agility = 12}
 Will store multiple inputs in player object | input - value = s | Player{agility = 12, strength = 15}
