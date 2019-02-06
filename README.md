@@ -6,14 +6,19 @@
 
 ## Description
 
-_This application provides the user with the oppurtunity to go on a thrilling adventure!_ 
+_This application provides the user with the oppurtunity to go on a thrilling adventure!_
 
 ## Specs
-* _Spec: Will gather input of radio choice from user and return value._
-* _Spec: Will gather input from multiple questions and return accumulated value._
-* _Spec: User clicks through questions, corresponding page is displayed._
-* _Spec: Accumulated info is allocated to different categories - returns corresponding ending based on values._
 
+Specification | Input | Output
+------------- | ----- | ------
+Will gather input of radio choice from user | radio(a): checked | value = a
+Will store input value in player object | value = a | Player{agility = 12}
+Will store multiple inputs in player object | input - value = s | Player{agility = 12, strength = 15}
+Will display character stats to player | input - click(character sheet) | Character: Agility: 12 Strength: 15
+Will move through story changing questions | click(next) | hides current page shows another
+Will move through story in correct order | input - page 1: click(next) | output - page 2
+displays different endings based on stats | input - Player{agility = 12, strength = 15} | output - Strength Ending
 
 ## Setup/Installation Requirements
 

@@ -3,6 +3,7 @@ function charStats() {
   this.intelligence = 0;
   this.charisma = 0;
   this.strength = 0;
+  this.humanity = 0;
 }
 
 charStats.prototype.pushStat = function(input) {
@@ -14,6 +15,8 @@ charStats.prototype.pushStat = function(input) {
     this.charisma += 15;
   } else if (input == "s") {
     this.strength += 15;
+  } else if (input == "h") {
+    this.humanity += 1;
     }
   }
   charStats.prototype.pushStatFirst = function(input) {
@@ -25,6 +28,8 @@ charStats.prototype.pushStat = function(input) {
       this.charisma += 18;
     } else if (input == "s") {
       this.strength += 18;
+    } else if (input == "h") {
+      this.humanity += 1;
       }
     }
 
@@ -32,7 +37,9 @@ charStats.prototype.pushStat = function(input) {
 
 
 charStats.prototype.decideEnd = function() {
-  if (this.agility > this.intelligence && this.agility > this.charisma && this.agility > this.strength) {
+  if (this.humanity >= 3){
+    return "#ending-h"
+  } else if (this.agility > this.intelligence && this.agility > this.charisma && this.agility > this.strength) {
     return "#ending-a";
   } else if (this.strength > this.intelligence && this.strength > this.charisma && this.strength > this.agility) {
     return "#ending-s";

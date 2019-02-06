@@ -18,6 +18,7 @@ $(function(){
       $("#strDisplay").html(playerCharStats.strength);
       $("#charDisplay").html(playerCharStats.charisma);
       $("#intDisplay").html(playerCharStats.intelligence);
+      $("#humDisplay").html(playerCharStats.humanity);
     };
   });
   $(".scenario1Complete").click(function(){
@@ -39,6 +40,7 @@ $(function(){
       $("#strDisplay").html(playerCharStats.strength);
       $("#charDisplay").html(playerCharStats.charisma);
       $("#intDisplay").html(playerCharStats.intelligence);
+      $("#humDisplay").html(playerCharStats.humanity);
     };
   });
   $(".scenario2Complete").click(function(){
@@ -60,6 +62,7 @@ $(function(){
       $("#strDisplay").html(playerCharStats.strength);
       $("#charDisplay").html(playerCharStats.charisma);
       $("#intDisplay").html(playerCharStats.intelligence);
+      $("#humDisplay").html(playerCharStats.humanity);
     };
   });
   $(".scenario3Complete").click(function(){
@@ -81,6 +84,7 @@ $(function(){
       $("#strDisplay").html(playerCharStats.strength);
       $("#charDisplay").html(playerCharStats.charisma);
       $("#intDisplay").html(playerCharStats.intelligence);
+      $("#humDisplay").html(playerCharStats.humanity);
     };
   });
   $(".scenario4Complete").click(function(){
