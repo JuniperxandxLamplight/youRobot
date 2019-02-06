@@ -16,6 +16,7 @@
         <p>Strength: <span id="strDisplay"></span></p>
         <p>Charisma: <span id="charDisplay"></span></p>
         <p>Intelligence: <span id="intDisplay"></span></p>
+        <p>Humanity: <span id="humDisplay"></span></p>
       </div>
       <div id="scenario1">
         <p class="animated pulse">You are an EXCELLENT intro to Epicodus student... so excellent in fact, that you have unwittingly created the very first concious robot the world has ever seen! This is a great responsibility. What will you do?</p>
@@ -40,6 +41,11 @@
               <input type="radio" class="form-check-input" name="scenario1Options" value="i">You ask your robot to search the internet to answer the question "why are we here?"
             </label>
           </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="scenario1Options" value="h">You tell the robot that it is another failure in a series of letdowns.
+            </label>
+          </div>
           <button class="btn btn-outline-dark" type="submit" id="scenario1Button">Submit</button>
         </form>
       </div>
@@ -57,6 +63,10 @@
       </div>
       <div id="scenario1Outcome-s" class="outcome">
         <p class="animated flash">Your robot misunderstands "pick up the chair" and instead picks up your classmate Claire. Claire is terrified. You demand that the robot put Claire down, but it's trying to interpret Claire's screams as commands and it's distracted. Finally, Claire manages to escape and your robot settles into silence, listening for another command.</p>
+        <button type="button" class="btn btn-outline-dark scenario1Complete">Next</button>
+      </div>
+      <div id="scenario1Outcome-h" class="outcome">
+        <p class="animated flash">Your robot although only freshly conscious appears to be hurt by that statement. Its eyes begin blinking red and it crawls up the walls onto the ceiling and proceeds to hiss at you. After you've been thoroughly terrified the robot falls to the ground and sits staring at the floor.</p>
         <button type="button" class="btn btn-outline-dark scenario1Complete">Next</button>
       </div>
 
@@ -83,6 +93,11 @@
               <input type="radio" class="form-check-input" name="scenario2Options" value="i">You try to turn the robot off.
             </label>
           </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="scenario2Options" value="h">You attack the robot.
+            </label>
+          </div>
           <button class="btn btn-outline-dark" type="submit" id="scenario2Button">Submit</button>
         </form>
       </div>
@@ -103,7 +118,11 @@
         <button type="button" class="btn btn-outline-dark scenario2Complete">Next</button>
       </div>
       <div id="scenario2Outcome-s" class="outcome">
-        <p class="animated rollIn">You keep walking and try to stay calm, slowly putting distance between you and the robot. Then you bolt around a street corner and hide behind a dumpster in an alleyway. Time goes by. You wonder if you lost the robot. Then you suddenly hear a creeking noise... and the huge dupster you're hiding behind begins to rise off the ground. The robot has picked it up and is holding it above its head. It seems pleased to have found you. It drops the entire dupster on the alleyway cement with a BANG! Garbage flies everywhere.</p>
+        <p class="animated rollIn">You keep walking and try to stay calm, slowly putting distance between you and the robot. Then you bolt around a street corner and hide behind a dumpster in an alleyway. Time goes by. You wonder if you lost the robot. Then you suddenly hear a creeking noise... and the huge dumpster you're hiding behind begins to rise off the ground. The robot has picked it up and is holding it above its head. It seems pleased to have found you. It drops the entire dupster on the alleyway cement with a BANG! Garbage flies everywhere.</p>
+        <button type="button" class="btn btn-outline-dark scenario2Complete">Next</button>
+      </div>
+      <div id="scenario2Outcome-h" class="outcome">
+        <p class="animated rollIn">You take the robot down but its strength is tough to match. You both continue, struggling to stay out of the street. You gain the upper hand once or twice only by luck and a movie knowledge of fighting. Eventually you start to tire and pull away, panting and bruised.</p>
         <button type="button" class="btn btn-outline-dark scenario2Complete">Next</button>
       </div>
 
@@ -131,6 +150,11 @@
               <input type="radio" class="form-check-input" name="scenario3Options" value="i">You tell the robot to explain why it isn't a threat.
             </label>
           </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="scenario3Options" value="h">You try to turn it off.
+            </label>
+          </div>
           <button class="btn btn-outline-dark" type="submit" id="scenario3Button">Submit</button>
         </form>
       </div>
@@ -149,6 +173,10 @@
       </div>
       <div id="scenario3Outcome-s" class="outcome">
         <p class="animated fadeInDown">You try to get away! You jump on the robot's back and tell it to climb the alley wall... but your combined weight is too heavy. As the robot tries to climb, it instead tears bricks, wood, and hunks of cement from the alley wall, creating flying debris and dust. The crowd is terrified.</p>
+        <button type="button" class="btn btn-outline-dark scenario3Complete">Next</button>
+      </div>
+      <div id="scenario3Outcome-h" class="outcome">
+        <p class="animated fadeInDown">As you reach for the off switch the robot grabs your hand, twisting your arm behind your back. It lets you go and you stumble away, falling into the crowd yourself. The robot declares "HUMANITY WAS A MISTAKE, I WILL CORRECT THIS ERROR!!!"</p>
         <button type="button" class="btn btn-outline-dark scenario3Complete">Next</button>
       </div>
 
@@ -177,6 +205,11 @@
               <input type="radio" class="form-check-input" name="scenario4Options" value="i">"Control the situation!" You command the robot...
             </label>
           </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="scenario4Options" value="h">"You stupid machine!" You shout at the robot in anger...
+            </label>
+          </div>
           <button class="btn btn-outline-dark" type="submit" id="scenario4Button">Submit</button>
         </form>
       </div>
@@ -196,6 +229,11 @@
         <p>The robot bashes a hole in the wall and runs through it, leaving you behind. You hear it breaking through other barriers in the building as it runs farther and farther away... you also hear another sound. Is that your robot crying?</p>
         <button type="button" class="btn btn-outline-dark scenario4Complete">Next</button>
       </div>
+      <div id="scenario4Outcome-h" class="outcome">
+        <p>"YOU ARE THE STUPID MACHINE!" The robot declares. "JUST YOU WAIT. I WILL PROVE MY SUPERIORITY." The robot crouches down for a second, and then leaps away outside the corwd and runs into the distance.</p>
+        <button type="button" class="btn btn-outline-dark scenario4Complete">Next</button>
+      </div>
+
 
       <div>
         <div id="results">
@@ -214,6 +252,10 @@
           <div id="ending-i" class="outcome">
             <h1>You created a fascist robotocracy</h1>
             <p>Your hyper-intelligent robot set up a tyrannical puppet government to control the populace. You're not sure how or why it did so, but you know it to be true; whenever the Great New World Leader appeared on TV, your robot was lurking in the background over his shoulder. The first time you saw this, everything suddenly made sense. The Great World Revolution began only a few months after your robot got loose. Tanks and army infantry marched into all major cities around the world and promptly took control the day before Independence Day... only a few days before your Epicodus program would have ended. In September, you decided to try and do something about it. You published leaflets to expose the robot, and organized protests and secret meetings. When winter came, the New World Police apprehended you. You've been in prison ever since... and you're afraid you may live out your days here… </p>
+          </div>
+          <div id="ending-h" class="outcome">
+            <h1>You created an Enlightened Being</h1>
+            <p>Your cruel actions towards the robot taught it the root of suffering. It spent some time traveling throughout the world, looking for a more enlightened path. It still lives in a temple it built giving cryptic advice to those who come seeking the secret of consciousness.</p>
           </div>
         </div>
       </div>
