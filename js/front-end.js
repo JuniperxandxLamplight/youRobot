@@ -8,14 +8,14 @@ $(function(){
     event.preventDefault();
     var stat = $("input:radio[name=scenario1Options]:checked").val();
     playerCharStats.pushStatFirst(stat);
-    $("body").css('background-image', 'url(img/classroom.jpeg)');
-    $("body").css('background-color', 'grey');
-    $("body").css('color', 'white');
-    $("button").css('color', 'white');
-    $("h1").css('text-shadow', '0px 0px 8px black');
     if (!stat){
       $("#scenario1Form").addClass("animated shake");
     } else{
+      $("body").css('background-image', 'url(img/classroom.jpeg)');
+      $("body").css('background-color', 'grey');
+      $("body").css('color', 'white');
+      $("button").css('color', 'white');
+      $("h1").css('text-shadow', '0px 0px 8px black');
       $("#scenario1Form").removeClass("animated shake");
       $("#scenario1").slideUp(500);
       $("#scenario1Outcome-"+stat).fadeIn(500).delay(500);
@@ -125,7 +125,7 @@ $(function(){
     if (final === "#ending-a") {
       $("body").css('background-image', 'url(https://images.unsplash.com/photo-1532178324009-6b6adeca1741?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3496&q=80)');
       $("body").css('background-size', 'cover');
-      $("body").css('background-color', 'black');
+      $("body").css('background-color', 'grey');
       $("body").css('color', '#51FFC1');
       $("button").css('color', '#51FFC1');
       $("h1").css('text-shadow', '0px 0px 8px black');

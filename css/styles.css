@@ -5,6 +5,8 @@ body{
   background-repeat: no-repeat;
 }
 
+
+
 .animated {
    animation-iteration-count: 3;
 }
@@ -36,22 +38,26 @@ body{
 #scenario1Outcome-a,
 #scenario1Outcome-s,
 #scenario1Outcome-c,
-#scenario1Outcome-i,
+#scenario1Outcome-i
+#scenario1Outcome-h,
 #scenario2,
 #scenario2Outcome-a,
 #scenario2Outcome-s,
 #scenario2Outcome-c,
 #scenario2Outcome-i,
+#scenario2Outcome-h,
 #scenario3,
 #scenario3Outcome-a,
 #scenario3Outcome-s,
 #scenario3Outcome-c,
 #scenario3Outcome-i,
+#scenario3Outcome-h,
 #scenario4,
 #scenario4Outcome-a,
 #scenario4Outcome-s,
 #scenario4Outcome-c,
 #scenario4Outcome-i,
+#scenario4Outcome-h,
 .outcome{
   margin-top: 250px;
   background-image:linear-gradient(rgba(122, 122, 122, .5), rgba(61, 61, 61, .5));
@@ -60,8 +66,33 @@ body{
   padding: 2%;
   margin-left: 10%;
   margin-right: 10%;
-  /* height: 300px */
+  height: 400px;
+  display: relative;
 }
+
+#scenario1Outcome-a,
+#scenario1Outcome-s,
+#scenario1Outcome-c,
+#scenario1Outcome-i,
+#scenario1Outcome-h,
+#scenario2Outcome-a,
+#scenario2Outcome-s,
+#scenario2Outcome-c,
+#scenario2Outcome-i,
+#scenario2Outcome-h,
+#scenario3Outcome-a,
+#scenario3Outcome-s,
+#scenario3Outcome-c,
+#scenario3Outcome-i,
+#scenario3Outcome-h,
+#scenario4Outcome-a,
+#scenario4Outcome-s,
+#scenario4Outcome-c,
+#scenario4Outcome-i,
+#scenario4Outcome-h {
+  padding-top: 13%;
+}
+
 
 
 #results {
