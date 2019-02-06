@@ -36,6 +36,7 @@ _If you encounter any bugs or issues not documented during your experience, plea
 ## Technologies used
 
 _This application was created using HTML, CSS, Bootstrap, Javascript and Jquery_
+_Music royalty-free from BenSound and Purple-Planet.com_
 
 ### License
 
