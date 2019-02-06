@@ -1,5 +1,19 @@
 $(function(){
   var playerCharStats = new charStats
+  var character;
+  $("#characterForm").submit(function(event){
+    event.preventDefault();
+    var newChar = $("#characterSelect").val();
+    if (newChar == "guy"){
+      character = "guy";
+    } else if (newChar == "girl"){
+      character = "girl";
+    };
+    document.getElementById('character').src = 'img/' + character + '-neutral.png';
+    document.getElementById('robot').src = 'img/robot-green.png';
+    $("#startScreen").slideUp(500);
+    $("#scenario1").fadeIn(500).delay(500);
+  });
   $("#characterBar h5").click(function(){
     $("#characterBar p").slideToggle();
   });
@@ -40,7 +54,12 @@ $(function(){
       $("#strDisplay").html(playerCharStats.strength);
       $("#charDisplay").html(playerCharStats.charisma);
       $("#intDisplay").html(playerCharStats.intelligence);
+<<<<<<< HEAD
+      document.getElementById('character').src = 'img/' + character + '-scared.png';
+      document.getElementById('robot').src = 'img/robot-orange.png';
+=======
       $("#humDisplay").html(playerCharStats.humanity);
+>>>>>>> master
     };
   });
   $(".scenario2Complete").click(function(){
@@ -84,11 +103,18 @@ $(function(){
       $("#strDisplay").html(playerCharStats.strength);
       $("#charDisplay").html(playerCharStats.charisma);
       $("#intDisplay").html(playerCharStats.intelligence);
+<<<<<<< HEAD
+      document.getElementById('character').src = 'img/' + character + '-angry.png';
+      document.getElementById('robot').src = 'img/robot-red.png';
+=======
       $("#humDisplay").html(playerCharStats.humanity);
+>>>>>>> master
     };
   });
   $(".scenario4Complete").click(function(){
     console.log(playerCharStats.decideEnd());
+    $("#character").hide();
+    $("#robot").hide();
     $(".outcome").slideUp(500);
     var final = playerCharStats.decideEnd()
     $(final).fadeIn(500).delay(500);

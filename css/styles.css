@@ -31,6 +31,7 @@ body{
   background-color: #3a3a3a;
   color: white;
 }
+#startScreen,
 #scenario1,
 #scenario1Outcome-a,
 #scenario1Outcome-s,
@@ -52,7 +53,6 @@ body{
 #scenario4Outcome-c,
 #scenario4Outcome-i,
 .outcome{
-  margin-top: 250px;
   background-image:linear-gradient(rgba(122, 122, 122, .5), rgba(61, 61, 61, .5));
   box-shadow: 0px 10px 5px rgba(100, 100, 100, .5);
   border-radius: 25px;
@@ -61,18 +61,22 @@ body{
   margin-right: 10%;
 }
 
-#results {
-  margin-top: 175px;
-
-}
 .btn{
   margin: 5px;
 }
 #refreshButton{
-  margin-top: 30%;
+  display: none;
+  margin-top: 5%;
+}
+#characterForm{
+  padding-left: 46%;
+  padding-right: 46%;
 }
 /* Divs to start hidden */
 #characterBar p{
+  display: none;
+}
+#scenario1{
   display: none;
 }
 #scenario1Outcome{
@@ -101,7 +105,14 @@ body{
   display: none;
 }
 
-.ending-i-background {
-  background-image: url("http://s3.amazonaws.com/assets.vision.org/uploadedimages/Home/Articles/winter2016-fourhorsemen-lead.jpg");
-  background-color: black;
+.imgs {
+  padding-top: 100px;
 }
+
+img {
+  height: 400px;
+  width: 225px;
+}
+
+#pimg{
+  margin: 0;
