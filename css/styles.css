@@ -70,7 +70,11 @@ img {
   margin-left: 10%;
   margin-right: 10%;
 }
-#results{
+#ending-a,
+#ending-s,
+#ending-c,
+#ending-i,
+#ending-h{
   margin-top: 30%;
 }
 .btn{
@@ -112,7 +116,6 @@ img {
 #scenario4Outcome{
   display: none;
 }
-
 .outcome {
   display: none;
 }
