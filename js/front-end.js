@@ -27,6 +27,11 @@ $(function(){
     if (!stat){
       $("#scenario1Form").addClass("animated shake");
     } else{
+      $("body").css('background-image', 'url(img/classroom.jpeg)');
+      $("body").css('background-color', 'grey');
+      $("body").css('color', 'white');
+      $("button").css('color', 'white');
+      $("h1").css('text-shadow', '0px 0px 8px black');
       $("#scenario1Form").removeClass("animated shake");
       $("#scenario1").slideUp(500);
       $("#scenario1Outcome-"+stat).fadeIn(500).delay(500);
@@ -44,6 +49,11 @@ $(function(){
     };
   });
   $(".scenario1Complete").click(function(){
+    $("body").css('background-image', 'url(img/street1.jpeg)');
+    $("body").css('background-color', 'grey');
+    $("body").css('color', 'white');
+    $("button").css('color', 'white');
+    $("h1").css('text-shadow', '0px 0px 8px black');
     $(".outcome").slideUp(500);
     $("#scenario2").fadeIn(500).delay(500);
   });
@@ -56,7 +66,7 @@ $(function(){
       $("#scenario2Form").addClass("animated shake");
     } else{
       $("#scenario2Form").removeClass("animated shake");
-      $("#scenario2").slideUp(500);
+      $("#scenario2").hide();
       $("#scenario2Outcome-"+stat).fadeIn(500).delay(500);
       if (stat == "a") {
         $("#agilDisplay").append('<span class="fas fa-bolt"></span>');
@@ -74,7 +84,14 @@ $(function(){
     };
   });
   $(".scenario2Complete").click(function(){
-    $(".outcome").slideUp(500);
+    $("body").css('background-image', 'url(img/alley.jpeg)');
+    $("body").css('background-position', 'center');
+    $("body").css('background-size', 'cover');
+    $("body").css('background-color', 'grey');
+    $("body").css('color', 'white');
+    $("button").css('color', 'white');
+    $("h1").css('text-shadow', '0px 0px 8px black');
+    $(".outcome").hide();
     $("#scenario3").fadeIn(500).delay(500);
   });
 
@@ -86,7 +103,7 @@ $(function(){
       $("#scenario3Form").addClass("animated shake");
     } else{
       $("#scenario3Form").removeClass("animated shake");
-      $("#scenario3").slideUp(500);
+      $("#scenario3").hide();
       $("#scenario3Outcome-"+stat).fadeIn(500).delay(500);
       if (stat == "a") {
         $("#agilDisplay").append('<span class="fas fa-bolt"></span>');
@@ -102,6 +119,12 @@ $(function(){
     };
   });
   $(".scenario3Complete").click(function(){
+    $("body").css('background-image', 'url(img/crowd3.jpeg)');
+    $("body").css('background-color', 'grey');
+    $("body").css('background-size', 'cover');
+    $("body").css('color', 'white');
+    $("button").css('color', 'white');
+    $("h1").css('text-shadow', '0px 0px 8px black');
     $(".outcome").slideUp(500);
     $("#scenario4").fadeIn(500).delay(500);
   });
@@ -114,7 +137,7 @@ $(function(){
       $("#scenario4Form").addClass("animated shake");
     } else{
       $("#scenario4Form").removeClass("animated shake");
-      $("#scenario4").slideUp(500);
+      $("#scenario4").hide();
       $("#scenario4Outcome-"+stat).fadeIn(500).delay(500);
       if (stat == "a") {
         $("#agilDisplay").append('<span class="fas fa-bolt"></span>');
@@ -132,7 +155,6 @@ $(function(){
     };
   });
   $(".scenario4Complete").click(function(){
-    console.log(playerCharStats.decideEnd());
     $("#character").hide();
     $("#robot").hide();
     $(".outcome").hide();
@@ -160,10 +182,10 @@ $(function(){
       document.getElementById('music').src = 'mp3/deathmarch.mp3';
       $("body").css('background-image', 'url(https://images.unsplash.com/photo-1510885154241-75e69f87acae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2251&q=80)');
       $("body").css('background-size', 'cover');
-      $("body").css('background-color', 'grey');
+      $("body").css('background-color', 'black');
       $("body").css('color', 'white');
       $("button").css('color', 'white');
-      $("h1").css('text-shadow', '0px 0px 8px black');
+      $("body").css('text-shadow', '0px 0px 8px black');
     }
     if (final === "#ending-s") {
       document.getElementById('music').src = 'mp3/meatgrinder.mp3';
