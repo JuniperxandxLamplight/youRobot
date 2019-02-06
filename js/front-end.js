@@ -104,7 +104,24 @@ $(function(){
       $("button").css('color', '#51FFC1');
       $("h1").css('text-shadow', '0px 0px 8px black');
     }
+    if (final === "#ending-c") {
+      $("body").css('background-image', 'url(https://images.unsplash.com/photo-1510885154241-75e69f87acae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2251&q=80)');
+      $("body").css('background-size', 'cover');
+      $("body").css('background-color', 'grey');
+      $("body").css('color', 'white');
+      $("button").css('color', 'white');
+      $("h1").css('text-shadow', '0px 0px 8px black');
+    }
+    if (final === "#ending-s") {
+      $("body").css('background-image', 'url(https://www.incimages.com/uploaded_files/image/1940x900/getty_624678524_361747.jpg)');
+      $("body").css('background-size', 'cover');
+      $("body").css('background-color', 'grey');
+      $("body").css('color', 'white');
+      $("button").css('color', 'white');
+      $("h1").css('text-shadow', '0px 0px 8px black');
+    }
   });
+
 
   $("#refreshButton").click(function(){
     location.reload();
