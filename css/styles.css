@@ -100,8 +100,3 @@ body{
 .outcome {
   display: none;
 }
-
-.ending-i-background {
-  background-image: url("http://s3.amazonaws.com/assets.vision.org/uploadedimages/Home/Articles/winter2016-fourhorsemen-lead.jpg");
-  background-color: black;
-}

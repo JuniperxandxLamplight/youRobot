@@ -8,6 +8,11 @@ $(function(){
     event.preventDefault();
     var stat = $("input:radio[name=scenario1Options]:checked").val();
     playerCharStats.pushStatFirst(stat);
+    $("body").css('background-image', 'url(img/classroom.jpeg)');
+    $("body").css('background-color', 'grey');
+    $("body").css('color', 'white');
+    $("button").css('color', 'white');
+    $("h1").css('text-shadow', '0px 0px 8px black');
     if (!stat){
       $("#scenario1Form").addClass("animated shake");
     } else{
@@ -22,6 +27,11 @@ $(function(){
     };
   });
   $(".scenario1Complete").click(function(){
+    $("body").css('background-image', 'url(img/street1.jpeg)');
+    $("body").css('background-color', 'grey');
+    $("body").css('color', 'white');
+    $("button").css('color', 'white');
+    $("h1").css('text-shadow', '0px 0px 8px black');
     $(".outcome").slideUp(500);
     $("#scenario2").fadeIn(500).delay(500);
   });
@@ -34,7 +44,7 @@ $(function(){
       $("#scenario2Form").addClass("animated shake");
     } else{
       $("#scenario2Form").removeClass("animated shake");
-      $("#scenario2").slideUp(500);
+      $("#scenario2").hide();
       $("#scenario2Outcome-"+stat).fadeIn(500).delay(500);
       $("#agilDisplay").html(playerCharStats.agility);
       $("#strDisplay").html(playerCharStats.strength);
@@ -44,7 +54,12 @@ $(function(){
     };
   });
   $(".scenario2Complete").click(function(){
-    $(".outcome").slideUp(500);
+    $("body").css('background-image', 'url(img/crowdbetter.jpeg)');
+    $("body").css('background-color', 'grey');
+    $("body").css('color', 'white');
+    $("button").css('color', 'white');
+    $("h1").css('text-shadow', '0px 0px 8px black');
+    $(".outcome").hide();
     $("#scenario3").fadeIn(500).delay(500);
   });
 
@@ -66,6 +81,11 @@ $(function(){
     };
   });
   $(".scenario3Complete").click(function(){
+    $("body").css('background-image', 'url(img/crowd-blur.jpeg)');
+    $("body").css('background-color', 'grey');
+    $("body").css('color', 'white');
+    $("button").css('color', 'white');
+    $("h1").css('text-shadow', '0px 0px 8px black');
     $(".outcome").slideUp(500);
     $("#scenario4").fadeIn(500).delay(500);
   });
