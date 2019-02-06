@@ -93,6 +93,12 @@ body{
   padding-top: 13%;
 }
 
+#scenario1Form,
+#scenario2Form,
+#scenario3Form,
+#scenario4Form {
+  padding-top: 1%;
+}
 
 
 #results {
@@ -100,7 +106,7 @@ body{
 
 }
 .btn{
-  margin: 5px;
+  margin: 15px;
 }
 #refreshButton{
   margin-top: 5%;

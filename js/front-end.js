@@ -136,7 +136,7 @@ $(function(){
       $("body").css('background-color', 'black');
       $("body").css('color', 'white');
       $("button").css('color', 'white');
-      $("h1").css('text-shadow', '0px 0px 8px black');
+      $("body").css('text-shadow', '0px 0px 8px black');
     }
     if (final === "#ending-s") {
       $("body").css('background-image', 'url(https://www.incimages.com/uploaded_files/image/1940x900/getty_624678524_361747.jpg)');
