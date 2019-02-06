@@ -13,7 +13,7 @@ body{
 }
 
 #characterBar{
-  width: 160px;
+  width: 220px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -30,6 +30,16 @@ body{
 #characterBar:hover{
   background-color: #3a3a3a;
   color: white;
+}
+.imgs {
+  padding-top: 100px;
+}
+img {
+  height: 400px;
+  width: 225px;
+}
+#pimg{
+  margin: 0;
 }
 #startScreen,
 #scenario1,
@@ -60,7 +70,9 @@ body{
   margin-left: 10%;
   margin-right: 10%;
 }
-
+#results{
+  margin-top: 30%;
+}
 .btn{
   margin: 5px;
 }
@@ -104,15 +116,3 @@ body{
 .outcome {
   display: none;
 }
-
-.imgs {
-  padding-top: 100px;
-}
-
-img {
-  height: 400px;
-  width: 225px;
-}
-
-#pimg{
-  margin: 0;
