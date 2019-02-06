@@ -1,5 +1,18 @@
 $(function(){
   var playerCharStats = new charStats
+  var character;
+  $("#characterForm").submit(function(event){
+    event.preventDefault();
+    var newChar = $("#characterSelect").val();
+    if (newChar == "guy"){
+      character = "guy";
+    } else if (newChar == "girl"){
+      character = "girl";
+    };
+    $("#character").src = 'img/' + character + '"'-neutral.png'"';
+    $("#startScreen").slideUp(500);
+    $("#scenario1").fadeIn(500).delay(500);
+  });
   $("#characterBar h5").click(function(){
     $("#characterBar p").slideToggle();
   });

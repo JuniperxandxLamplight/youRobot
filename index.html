@@ -17,6 +17,26 @@
         <p>Charisma: <span id="charDisplay"></span></p>
         <p>Intelligence: <span id="intDisplay"></span></p>
       </div>
+      <div class="container imgs">
+        <div class="row">
+          <div class="col-md-6">
+            <p id="pimg"><img id="character" src="img/girl-neutral.png"></p>
+          </div>
+          <div class="col-md-6">
+            <p id="pimg"><img id="robot" src="img/guy-neutral.png"></p>
+          </div>
+        </div>
+      </div>
+      <div id="startScreen">
+        <p>Which character would you like?</p>
+        <form id="characterForm">
+          <select class="form-control" id="characterSelect">
+            <option>guy</option>
+            <option>girl</option>
+          </select>
+          <button type="submit" id="start">Start</button>
+        </form>
+      </div>
       <div id="scenario1">
         <p class="animated pulse">You are an EXCELLENT intro to Epicodus student... so excellent in fact, that you have unwittingly created the very first concious robot the world has ever seen! This is a great responsibility. What will you do?</p>
         <form id="scenario1Form">
