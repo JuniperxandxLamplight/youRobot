@@ -1,6 +1,7 @@
 $(function(){
   var playerCharStats = new charStats
   var character;
+  var music;
   $("#characterForm").submit(function(event){
     event.preventDefault();
     var newChar = $("#characterSelect").val();
@@ -139,6 +140,7 @@ $(function(){
     $(final).fadeIn(500).delay(500);
 
     if (final === "#ending-i") {
+      document.getElementById('music').src = 'mp3/instinct.mp3';
       $("body").css('background-image', 'url(http://s3.amazonaws.com/assets.vision.org/uploadedimages/Home/Articles/winter2016-fourhorsemen-lead.jpg)');
       $("body").css('background-color', 'grey');
       $("body").css('color', 'white');
@@ -146,6 +148,7 @@ $(function(){
       $("h1").css('text-shadow', '0px 0px 8px black');
     }
     if (final === "#ending-a") {
+      document.getElementById('music').src = 'mp3/turning.mp3';
       $("body").css('background-image', 'url(https://images.unsplash.com/photo-1532178324009-6b6adeca1741?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3496&q=80)');
       $("body").css('background-size', 'cover');
       $("body").css('background-color', 'grey');
@@ -154,6 +157,7 @@ $(function(){
       $("h1").css('text-shadow', '0px 0px 8px black');
     }
     if (final === "#ending-c") {
+      document.getElementById('music').src = 'mp3/deathmarch.mp3';
       $("body").css('background-image', 'url(https://images.unsplash.com/photo-1510885154241-75e69f87acae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2251&q=80)');
       $("body").css('background-size', 'cover');
       $("body").css('background-color', 'grey');
@@ -162,14 +166,7 @@ $(function(){
       $("h1").css('text-shadow', '0px 0px 8px black');
     }
     if (final === "#ending-s") {
-      $("body").css('background-image', 'url(https://www.incimages.com/uploaded_files/image/1940x900/getty_624678524_361747.jpg)');
-      $("body").css('background-size', 'cover');
-      $("body").css('background-color', 'grey');
-      $("body").css('color', 'white');
-      $("button").css('color', 'white');
-      $("h1").css('text-shadow', '0px 0px 8px black');
-    }
-    if (final === "#ending-s") {
+      document.getElementById('music').src = 'mp3/meatgrinder.mp3';
       $("body").css('background-image', 'url(https://www.incimages.com/uploaded_files/image/1940x900/getty_624678524_361747.jpg)');
       $("body").css('background-size', 'cover');
       $("body").css('background-color', 'grey');
@@ -178,6 +175,7 @@ $(function(){
       $("h1").css('text-shadow', '0px 0px 8px black');
     }
     if (final === "#ending-h") {
+      document.getElementById('music').src = 'mp3/relaxing.mp3';
       $("body").css('background-image', 'url(https://images.unsplash.com/photo-1499516387605-0d549f707bd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80)');
       $("body").css('background-size', 'cover');
       $("body").css('background-color', 'grey');
