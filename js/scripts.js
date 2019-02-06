@@ -16,7 +16,7 @@ charStats.prototype.pushStat = function(input) {
   } else if (input == "s") {
     this.strength += 15;
   } else if (input == "h") {
-    this.humanity += 1;
+    this.humanity += 15;
     }
   }
   charStats.prototype.pushStatFirst = function(input) {
@@ -29,7 +29,7 @@ charStats.prototype.pushStat = function(input) {
     } else if (input == "s") {
       this.strength += 18;
     } else if (input == "h") {
-      this.humanity += 1;
+      this.humanity += 18;
       }
     }
 
@@ -37,15 +37,15 @@ charStats.prototype.pushStat = function(input) {
 
 
 charStats.prototype.decideEnd = function() {
-  if (this.humanity >= 3){
-    return "#ending-h"
-  } else if (this.agility > this.intelligence && this.agility > this.charisma && this.agility > this.strength) {
+  if (this.agility > this.intelligence && this.agility > this.charisma && this.agility > this.strength && this.agility > this.humanity) {
     return "#ending-a";
-  } else if (this.strength > this.intelligence && this.strength > this.charisma && this.strength > this.agility) {
+  } else if (this.strength > this.intelligence && this.strength > this.charisma && this.strength > this.agility && this.strength > this.humanity) {
     return "#ending-s";
-  }else if (this.charisma > this.intelligence && this.charisma > this.agility && this.charisma > this.strength) {
+  }else if (this.charisma > this.intelligence && this.charisma > this.agility && this.charisma > this.strength && this.charisma > this.humanity) {
     return "#ending-c";
-  }else if (this.intelligence > this.charisma && this.intelligence > this.strength && this.intelligence > this.agility) {
+  }else if (this.intelligence > this.charisma && this.intelligence > this.strength && this.intelligence > this.agility && this.intelligence > this.humanity) {
+    return "#ending-i";
+  }else if (this.humanity > this.charisma && this.humanity > this.strength && this.humanity > this.agility && this.agility > this.intelligence) {
     return "#ending-i";
   }
 

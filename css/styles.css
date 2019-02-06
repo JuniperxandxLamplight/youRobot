@@ -31,6 +31,16 @@ body{
   background-color: #3a3a3a;
   color: white;
 }
+.imgs {
+  padding-top: 100px;
+}
+img {
+  height: 400px;
+  width: 225px;
+}
+#pimg{
+  margin: 0;
+}
 #startScreen,
 #scenario1,
 #scenario1Outcome-a,
@@ -106,15 +116,3 @@ body{
 .outcome {
   display: none;
 }
-
-.imgs {
-  padding-top: 100px;
-}
-
-img {
-  height: 400px;
-  width: 225px;
-}
-
-#pimg{
-  margin: 0;
