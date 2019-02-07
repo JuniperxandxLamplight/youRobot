@@ -13,12 +13,12 @@ $(function(){
     document.getElementById('character').src = 'img/' + character + '-neutral.png';
     document.getElementById('robot').src = 'img/robot-green.png';
     $("#refreshButton").show();
-    $("#startScreen").slideUp(500);
-    $("#scenario1").fadeIn(500).delay(500);
     $("body").css('background-image', 'url(img/classroom.jpeg)');
     $("body").css('background-color', 'grey');
     $("body").css('color', 'white');
     $("button").css('color', 'white');
+    $("#startScreen").hide();
+    $("#scenario1").fadeIn(500).delay(500);
   });
   $("#characterBar h5").click(function(){
     $("#characterBar p").slideToggle();
@@ -49,13 +49,13 @@ $(function(){
   });
   $(".scenario1Complete").click(function(){
     $("body").css('background-image', 'url(img/street1.jpeg)');
+    $("h1").css('text-shadow', '0px 0px 8px black');
     $("body").css('background-position', 'center');
     $("body").css('background-size', 'cover');
     $("body").css('background-color', 'grey');
     $("body").css('color', 'white');
     $("button").css('color', 'white');
-    $("h1").css('text-shadow', '0px 0px 8px black');
-    $(".outcome").slideUp(500);
+    $(".outcome").hide();
     $("#scenario2").fadeIn(500).delay(500);
   });
 
@@ -126,7 +126,7 @@ $(function(){
     $("body").css('color', 'white');
     $("button").css('color', 'white');
     $("h1").css('text-shadow', '0px 0px 8px black');
-    $(".outcome").slideUp(500);
+    $(".outcome").hide();
     $("#scenario4").fadeIn(500).delay(500);
   });
 
