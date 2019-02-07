@@ -20,7 +20,7 @@ $(function(){
     $("#startScreen").hide();
     $("#scenario1").fadeIn(500).delay(500);
   });
-  $("#characterBar h5").click(function(){
+  $("#characterBar").click(function(){
     $("#characterBar p").slideToggle();
   });
 
@@ -159,6 +159,10 @@ $(function(){
     $("#character").hide();
     $("#robot").hide();
     $(".outcome").hide();
+    var music = document.getElementById("music");
+    if (!music.paused){
+      music.autoplay = true;
+    };
     var final = playerCharStats.decideEnd()
     $(final).fadeIn(500).delay(500);
 
