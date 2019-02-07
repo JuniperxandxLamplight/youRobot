@@ -15,6 +15,10 @@ $(function(){
     $("#refreshButton").show();
     $("#startScreen").slideUp(500);
     $("#scenario1").fadeIn(500).delay(500);
+    $("body").css('background-image', 'url(img/classroom.jpeg)');
+    $("body").css('background-color', 'grey');
+    $("body").css('color', 'white');
+    $("button").css('color', 'white');
   });
   $("#characterBar h5").click(function(){
     $("#characterBar p").slideToggle();
@@ -27,13 +31,8 @@ $(function(){
     if (!stat){
       $("#scenario1Form").addClass("animated shake");
     } else{
-      $("body").css('background-image', 'url(img/classroom.jpeg)');
-      $("body").css('background-color', 'grey');
-      $("body").css('color', 'white');
-      $("button").css('color', 'white');
-      $("h1").css('text-shadow', '0px 0px 8px black');
       $("#scenario1Form").removeClass("animated shake");
-      $("#scenario1").slideUp(500);
+      $("#scenario1").hide();
       $("#scenario1Outcome-"+stat).fadeIn(500).delay(500);
       if (stat == "a") {
         $("#agilDisplay").append('<span class="fas fa-bolt"></span><span class="fas fa-bolt"></span>');
@@ -50,6 +49,8 @@ $(function(){
   });
   $(".scenario1Complete").click(function(){
     $("body").css('background-image', 'url(img/street1.jpeg)');
+    $("body").css('background-position', 'center');
+    $("body").css('background-size', 'cover');
     $("body").css('background-color', 'grey');
     $("body").css('color', 'white');
     $("button").css('color', 'white');
@@ -200,7 +201,7 @@ $(function(){
       document.getElementById('music').src = 'mp3/relaxing.mp3';
       $("body").css('background-image', 'url(https://images.unsplash.com/photo-1499516387605-0d549f707bd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80)');
       $("body").css('background-size', 'cover');
-      $("body").css('background-color', 'grey');
+      $("body").css('background-color', 'black');
       $("body").css('color', 'white');
       $("button").css('color', 'white');
       $("h1").css('text-shadow', '0px 0px 8px #FFF100');
