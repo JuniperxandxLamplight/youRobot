@@ -1,5 +1,6 @@
 <!DOCTYPE html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <script type="text/javascript" src="js/front-end.js"></script>
@@ -30,17 +31,18 @@
         </div>
       </div>
       <div id="startScreen">
+        <h2>Y o u <span id="titleBar">|</span> R o b o t</h2>
         <p>Which character would you like to play as?</p>
         <form id="characterForm">
           <select class="form-control" id="characterSelect">
-            <option>guy</option>
-            <option>girl</option>
+            <option value="girl">Gray Shirt</option>
+            <option value="guy">Red Shirt</option>
           </select>
-          <button class="btn btn-outline-dark" type="submit" id="start">Start</button>
+          <button class="btn btn-outline-dark btn-lg" type="submit" id="start">Start</button>
         </form>
       </div>
       <div id="scenario1">
-        <p class="animated pulse">You are an EXCELLENT intro to Epicodus student... so excellent in fact, that you have unwittingly created the very first concious robot the world has ever seen! This is a great responsibility. What will you do?</p>
+        <p class="animated pulse">You are an EXCELLENT 'Intro to Epicodus' student... so excellent in fact, that you have unwittingly created the very first concious robot the world has ever seen! This is a great responsibility. What will you do?</p>
         <form id="scenario1Form">
           <div class="form-check">
             <label class="form-check-label">
