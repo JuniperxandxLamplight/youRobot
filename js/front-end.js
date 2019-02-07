@@ -14,7 +14,7 @@ $(function(){
     document.getElementById('robot').src = 'img/robot-green.png';
     $("#refreshButton").show();
     $("body").css('background-image', 'url(img/classroom.jpeg)');
-    $("body").css('background-color', 'grey');
+    $("body").css('background-color', 'black');
     $("body").css('color', 'white');
     $("button").css('color', 'white');
     $("#startScreen").hide();
@@ -52,7 +52,7 @@ $(function(){
     $("h1").css('text-shadow', '0px 0px 8px black');
     $("body").css('background-position', 'center');
     $("body").css('background-size', 'cover');
-    $("body").css('background-color', 'grey');
+    $("body").css('background-color', 'black');
     $("body").css('color', 'white');
     $("button").css('color', 'white');
     $(".outcome").hide();
@@ -88,7 +88,7 @@ $(function(){
     $("body").css('background-image', 'url(img/alley.jpeg)');
     $("body").css('background-position', 'center');
     $("body").css('background-size', 'cover');
-    $("body").css('background-color', 'grey');
+    $("body").css('background-color', 'black');
     $("body").css('color', 'white');
     $("button").css('color', 'white');
     $("h1").css('text-shadow', '0px 0px 8px black');
@@ -121,7 +121,7 @@ $(function(){
   });
   $(".scenario3Complete").click(function(){
     $("body").css('background-image', 'url(img/crowd3.jpeg)');
-    $("body").css('background-color', 'grey');
+    $("body").css('background-color', 'black');
     $("body").css('background-size', 'cover');
     $("body").css('color', 'white');
     $("button").css('color', 'white');
@@ -169,7 +169,7 @@ $(function(){
     if (final === "#ending-i") {
       document.getElementById('music').src = 'mp3/instinct.mp3';
       $("body").css('background-image', 'url(http://s3.amazonaws.com/assets.vision.org/uploadedimages/Home/Articles/winter2016-fourhorsemen-lead.jpg)');
-      $("body").css('background-color', 'grey');
+      $("body").css('background-color', 'black');
       $("body").css('color', 'white');
       $("button").css('color', 'white');
       $("h1").css('text-shadow', '0px 0px 8px black');
@@ -178,7 +178,7 @@ $(function(){
       document.getElementById('music').src = 'mp3/turning.mp3';
       $("body").css('background-image', 'url(https://images.unsplash.com/photo-1532178324009-6b6adeca1741?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3496&q=80)');
       $("body").css('background-size', 'cover');
-      $("body").css('background-color', 'grey');
+      $("body").css('background-color', 'black');
       $("body").css('color', '#51FFC1');
       $("button").css('color', '#51FFC1');
       $("h1").css('text-shadow', '0px 0px 8px black');
@@ -196,7 +196,7 @@ $(function(){
       document.getElementById('music').src = 'mp3/meatgrinder.mp3';
       $("body").css('background-image', 'url(https://www.incimages.com/uploaded_files/image/1940x900/getty_624678524_361747.jpg)');
       $("body").css('background-size', 'cover');
-      $("body").css('background-color', 'grey');
+      $("body").css('background-color', 'gray');
       $("body").css('color', 'white');
       $("button").css('color', 'white');
       $("h1").css('text-shadow', '0px 0px 8px black');

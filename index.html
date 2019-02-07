@@ -1,9 +1,9 @@
 <!DOCTYPE html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <script type="text/javascript" src="js/front-end.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/animate.css">
@@ -13,7 +13,7 @@
   <body>
     <div class="container">
       <div id="characterBar">
-        <h5>Character Stats</h5>
+        <h5>Stats</h5>
         <p>Agility = <span id="agilDisplay"></span></p>
         <p>Strength = <span id="strDisplay"></span></p>
         <p>Charisma = <span id="charDisplay"></span></p>
@@ -129,9 +129,6 @@
           <button class="btn btn-outline-dark" type="submit" id="scenario2Button">Submit</button>
         </form>
       </div>
-
-
-
 
       <div id="scenario2Outcome-a" class="outcome">
         <p class="animated rollIn">You run. You run as fast as you can. You run blindly and mindlessly through the city. Your animal instincts take over, and you run like you're running for your life until you can't run anymore. You double over and pant, holding your knees as you try to catch your breath. Once you recover, you look back. The robot is five steps behind you, mimicking your actions... it chased you the whole way.</p>
@@ -287,7 +284,7 @@
           </div>
         </div>
       </div>
-      <button class="btn btn-outline-dark" type="button" id="refreshButton">Restart</button>
+      <button class="btn btn-danger" type="button" id="refreshButton">Restart</button>
     </div>
   </body>
 </html>

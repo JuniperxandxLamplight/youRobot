@@ -3,7 +3,7 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   background-repeat: no-repeat;
-  font-size: 18px;
+  font-size: 19px;
   background-color: black;
   color: white;
 }
@@ -153,7 +153,6 @@ img {
 #refreshButton{
   display: none;
   margin-top: 5%;
-  background-color: red;
 }
 #characterForm{
   padding-left: 44%;
