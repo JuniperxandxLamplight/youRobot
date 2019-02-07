@@ -1,6 +1,6 @@
 # _Robot Text Game_
 
-#### _A website where you can go on an adventure with your new robot!, 2/1/19_
+#### _A website where you can go on an adventure with your new robot!, 2/7/19_
 
 #### By _**Aurora Shido-Wagenet, Nathan Nielson, Nayomi Morita, Slater Smith**_
 
